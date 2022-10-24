@@ -11,5 +11,3 @@ I've added datetime to the OG json file because if the doc is updated in future 
 https://discord.com/api/oauth2/authorize?client_id=1031221257846398986&permissions=395137068032&scope=bot
 
 ^^^^ That's the link to invite the discord bot to your server
-
-Boop be doop
