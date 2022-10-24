@@ -11,7 +11,7 @@ def episodecsvtojson(csvfile):
             if len(rows['people']) > 2:
                 key = rows['episode_number']
                 dicttowritetojson[key] = rows['people'].lower()
-    with open(jsonname, "w") as outfile:
-        json.dump(dicttowritetojson, outfile)
+    with open(jsonname, "w", encoding="utf-8") as outfile:
+        json.dump(dicttowritetojson, outfile, ensure_ascii=False)
 
 episodecsvtojson(r'ExportedEpisodeDetails.csv')
