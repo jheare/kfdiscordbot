@@ -29,19 +29,6 @@ async def on_ready():
     except Exception as e:
         print(e)
 
-@bot.tree.command(name="hello")
-async def hello(interaction: discord.Interaction):
-    await interaction.response.send_message(f"Hello {interaction.user.mention}! This is a slash command!",
-    ephemeral=True)
-
-@bot.tree.command(name="say")
-@app_commands.describe(arg = "What should I say?")
-async def say(interaction: discord.Interaction, arg: str):
-    if arg == "Boop be doop":
-        await interaction.response.send_message(f"{interaction.user.name}! said `{arg}`")
-    else:
-        await interaction.response.send_message("You're no fun")
-
 @bot.tree.command(name="findepisode")
 @app_commands.describe(person = "Who do you want to learn about?")
 async def say(interaction: discord.Interaction, person: str):
