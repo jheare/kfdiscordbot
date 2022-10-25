@@ -1,4 +1,4 @@
-# kfdiscordboy
+# kfdiscordbot
 Making a Knowledge Fight Discord bot
 
 ## people
@@ -14,7 +14,7 @@ I've added datetime to the OG json file because if the doc is updated in future 
 ## subjects
 
 *(From 25th Oct 2022)*
-Episode details re:subjects are taken from the file 'final.json' from this github repo - https://github.com/RainbowBatch/kfdb - 
+Episode details re:subjects are taken from the file 'raw_entities.json' from this github repo - https://github.com/RainbowBatch/kfdb - 
 
 The github repo is subject to change and the available data on subjects should be updated in future.
 
