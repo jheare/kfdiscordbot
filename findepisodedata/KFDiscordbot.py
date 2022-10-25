@@ -34,7 +34,7 @@ async def on_ready():
 async def say(interaction: discord.Interaction, person: str):
     formattedinput = sanitizeinput.output(person)
     arr_of_eps = []
-    with open(r'KFEpisodeData.json', encoding='utf-8') as jsonfile:
+    with open(r'KFEpisodeDataPeople.json', encoding='utf-8') as jsonfile:
         data = json.load(jsonfile)
         for x in data:
             if formattedinput in data[x]:
