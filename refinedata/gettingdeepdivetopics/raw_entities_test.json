@@ -1,0 +1,1991 @@
+[
+    {
+      "entity_count": 2,
+      "entity_name": "11th Avenue",
+      "entity_origin": {
+        "transcripts\\118.autosub.srt": 1,
+        "transcripts\\278.autosub.srt": 1
+      },
+      "entity_sourcetexts": {
+        "11th Avenue": 2
+      },
+      "entity_type": {
+        "FAC": 2
+      },
+      "grouped_entity_origin": [
+        "[[118: January 10-11, 2018]] (via AutoSub)",
+        "[[278: January 3, 2013]] (via AutoSub)"
+      ],
+      "is_existing": false,
+      "is_known_missing": false,
+      "starting_char": "1"
+    },
+    {
+      "entity_count": 3,
+      "entity_name": "12th District",
+      "entity_origin": {
+        "transcripts\\404.autosub.srt": 1,
+        "transcripts\\406.autosub.srt": 1,
+        "transcripts\\480.autosub.srt": 1
+      },
+      "entity_sourcetexts": {
+        "12th District": 3
+      },
+      "entity_type": {
+        "LOC": 3
+      },
+      "grouped_entity_origin": [
+        "[[404: Mr. Jones Goes To CPAC]] (via AutoSub)",
+        "[[406: March 1-4, 2020]] (via AutoSub)",
+        "[[480: September 9-10, 2020]] (via AutoSub)"
+      ],
+      "is_existing": false,
+      "is_known_missing": false,
+      "starting_char": "1"
+    },
+    {
+      "entity_count": 2,
+      "entity_name": "14th Amendment",
+      "entity_origin": {
+        "transcripts\\606.autosub.srt": 1,
+        "transcripts\\679.autosub.srt": 1
+      },
+      "entity_sourcetexts": {
+        "Fourteenth Amendment": 1,
+        "the Fourteenth Amendment": 1
+      },
+      "entity_type": {
+        "LAW": 1,
+        "ORG": 1
+      },
+      "grouped_entity_origin": [
+        "[[606: June 18-19, 2003]] (via AutoSub)",
+        "[[679: May 9, 2022]] (via AutoSub)"
+      ],
+      "is_existing": false,
+      "is_known_missing": false,
+      "starting_char": "1"
+    },
+    {
+      "entity_count": 122,
+      "entity_name": "1st Amendment",
+      "entity_origin": {
+        "transcripts\\10.otter.txt": 5,
+        "transcripts\\113.autosub.srt": 1,
+        "transcripts\\119.autosub.srt": 3,
+        "transcripts\\131.autosub.srt": 2,
+        "transcripts\\141.autosub.srt": 1,
+        "transcripts\\146.autosub.srt": 2,
+        "transcripts\\15.otter.txt": 1,
+        "transcripts\\16.otter.txt": 1,
+        "transcripts\\17.otter.txt": 1,
+        "transcripts\\199.autosub.srt": 1,
+        "transcripts\\230E.autosub.srt": 1,
+        "transcripts\\255.autosub.srt": 1,
+        "transcripts\\272.autosub.srt": 1,
+        "transcripts\\279.otter.txt": 2,
+        "transcripts\\282.autosub.srt": 7,
+        "transcripts\\284.autosub.srt": 1,
+        "transcripts\\288.autosub.srt": 1,
+        "transcripts\\290.autosub.srt": 1,
+        "transcripts\\310.autosub.srt": 1,
+        "transcripts\\310.otter.txt": 1,
+        "transcripts\\329.autosub.srt": 1,
+        "transcripts\\341.autosub.srt": 3,
+        "transcripts\\378.otter.txt": 3,
+        "transcripts\\394.autosub.srt": 1,
+        "transcripts\\398.autosub.srt": 1,
+        "transcripts\\401.autosub.srt": 1,
+        "transcripts\\404.autosub.srt": 3,
+        "transcripts\\409.autosub.srt": 1,
+        "transcripts\\422.autosub.srt": 1,
+        "transcripts\\436.autosub.srt": 1,
+        "transcripts\\439.autosub.srt": 1,
+        "transcripts\\448.autosub.srt": 1,
+        "transcripts\\449.autosub.srt": 1,
+        "transcripts\\497.autosub.srt": 3,
+        "transcripts\\511.autosub.srt": 1,
+        "transcripts\\514.autosub.srt": 1,
+        "transcripts\\523.autosub.srt": 2,
+        "transcripts\\524.autosub.srt": 1,
+        "transcripts\\537.autosub.srt": 2,
+        "transcripts\\541.autosub.srt": 1,
+        "transcripts\\543.autosub.srt": 1,
+        "transcripts\\562.autosub.srt": 1,
+        "transcripts\\577.autosub.srt": 1,
+        "transcripts\\6.otter.txt": 1,
+        "transcripts\\602.otter.txt": 3,
+        "transcripts\\614.autosub.srt": 1,
+        "transcripts\\617.autosub.srt": 1,
+        "transcripts\\618.autosub.srt": 6,
+        "transcripts\\619.autosub.srt": 1,
+        "transcripts\\623.autosub.srt": 1,
+        "transcripts\\634.autosub.srt": 2,
+        "transcripts\\641.autosub.srt": 2,
+        "transcripts\\646.autosub.srt": 1,
+        "transcripts\\657.autosub.srt": 2,
+        "transcripts\\665.autosub.srt": 1,
+        "transcripts\\665.otter.txt": 2,
+        "transcripts\\672.autosub.srt": 3,
+        "transcripts\\68.autosub.srt": 2,
+        "transcripts\\682.autosub.srt": 1,
+        "transcripts\\685.otter.txt": 3,
+        "transcripts\\713.autosub.srt": 1,
+        "transcripts\\714.otter.txt": 1,
+        "transcripts\\714.welder.txt": 1,
+        "transcripts\\715.otter.txt": 3,
+        "transcripts\\715.welder.txt": 4,
+        "transcripts\\717.welder.txt": 2,
+        "transcripts\\728.otter.txt": 1,
+        "transcripts\\729.otter.txt": 1,
+        "transcripts\\73.autosub.srt": 1,
+        "transcripts\\732.otter.txt": 2,
+        "transcripts\\736.otter.txt": 1,
+        "transcripts\\738.welder.srt": 1,
+        "transcripts\\83.autosub.srt": 1,
+        "transcripts\\99.otter.txt": 1
+      },
+      "entity_sourcetexts": {
+        "First Amendment": 29,
+        "The First Amendment": 13,
+        "The First Amendment\n\n": 2,
+        "a First Amendment": 3,
+        "the 1st Amendment": 2,
+        "the First Amendment": 65,
+        "the First Amendment\n\n": 6,
+        "their First Amendment": 2
+      },
+      "entity_type": {
+        "LAW": 114,
+        "ORG": 8
+      },
+      "grouped_entity_origin": [
+        "[[6: Inauguration Speech Recap]] (via otter.ai)",
+        "[[10: February 6, 2017]] (via otter.ai)",
+        "[[15: February 20-21, 2017]] (via otter.ai)",
+        "[[16: February 24, 2017]] (via otter.ai)",
+        "[[17: February 7, 2017]] (via otter.ai)",
+        "[[68: September 19-28, 2015]] (via AutoSub)",
+        "[[73: August 12, 2017]] (via AutoSub)",
+        "[[83: November 10-12, 2015]] (via AutoSub)",
+        "[[99: November 1, 2017]] (via otter.ai)",
+        "[[113: February 21-23, 2014]] (via AutoSub)",
+        "[[119: August 16, 2012]] (via AutoSub)",
+        "[[131: David Lynch Interview]] (via AutoSub)",
+        "[[141: March 20-22, 2018]] (via AutoSub)",
+        "[[146: April 4, 2018]] (via AutoSub)",
+        "[[199: August 29, 2018]] (via AutoSub)",
+        "[[230E: Obama Deception, Part 5]] (via AutoSub)",
+        "[[255: September 25, 2011]] (via AutoSub)",
+        "[[272: December 20, 2012]] (via AutoSub)",
+        "[[279: Formulaic Objections]] (via otter.ai)",
+        "[[282: April 5, 2019]] (via AutoSub)",
+        "[[284: April 12, 2019]] (via AutoSub)",
+        "[[288: January 7-9, 2013]] (via AutoSub)",
+        "[[290: April 25-26, 2019]] (via AutoSub)",
+        "[[310: June 13-14, 2019]] (via AutoSub, otter.ai)",
+        "[[329: August 4-5, 2019]] (via AutoSub)",
+        "[[341: September 5, 2019]] (via AutoSub)",
+        "[[378: Formulaic Objections Part 2]] (via otter.ai)",
+        "[[394: January 31, 2020]] (via AutoSub)",
+        "[[398: February 9-10, 2020]] (via AutoSub)",
+        "[[401: Formulaic Objections Part 3]] (via AutoSub)",
+        "[[404: Mr. Jones Goes To CPAC]] (via AutoSub)",
+        "[[409: The Lionel Countdown]] (via AutoSub)",
+        "[[422: April 17, 2020]] (via AutoSub)",
+        "[[436: May 22, 2020]] (via AutoSub)",
+        "[[439: May 29-31, 2020]] (via AutoSub)",
+        "[[448: June 21-22, 2020]] (via AutoSub)",
+        "[[449: June 23-24, 2020]] (via AutoSub)",
+        "[[497: Third Try's A Charm]] (via AutoSub)",
+        "[[511: The 12/12 Rallies]] (via AutoSub)",
+        "[[514: An X-Mas Report Rebuttal]] (via AutoSub)",
+        "[[523: January 18-19, 2021]] (via AutoSub)",
+        "[[524: Inauguration 2021]] (via AutoSub)",
+        "[[537: July 16-18, 2010]] (via AutoSub)",
+        "[[541: March 17-18, 2021]] (via AutoSub)",
+        "[[543: March 23-24, 2021]] (via AutoSub)",
+        "[[562: May 27, 2021]] (via AutoSub)",
+        "[[577: July 13, 2021]] (via AutoSub)",
+        "[[602: Sandy Hook Response]] (via otter.ai)",
+        "[[614: The Purge of Gates]] (via AutoSub)",
+        "[[617: June 27, 2003]] (via AutoSub)",
+        "[[618: November 15, 2021]] (via AutoSub)",
+        "[[619: November 16, 2021]] (via AutoSub)",
+        "[[623: July 2-3, 2003]] (via AutoSub)",
+        "[[634: July 11, 2003]] (via AutoSub)",
+        "[[641: Formulaic Objections Part 4]] (via AutoSub)",
+        "[[646: February 6, 2022]] (via AutoSub)",
+        "[[657: Chatting With Elizabeth Williamson]] (via AutoSub)",
+        "[[665: Formulaic Objections Part 6]] (via AutoSub, otter.ai)",
+        "[[672: April 18, 2022]] (via AutoSub)",
+        "[[682: May 15, 2022]] (via AutoSub)",
+        "[[685: Formulaic Objections Part 7]] (via otter.ai)",
+        "[[713: Chatting With Becca Lewis]] (via AutoSub)",
+        "[[714: Trial Recap, Part 1]] (via otter.ai, Welder)",
+        "[[715: Trial Recap, Part 2]] (via otter.ai, Welder)",
+        "[[717: August 17, 2022]] (via Welder)",
+        "[[728: Elizabeth Williamson Returns Once More]] (via otter.ai)",
+        "[[729: September 24, 2022]] (via otter.ai)",
+        "[[732: Trial Press Conference]] (via otter.ai)",
+        "[[736: Reflections on a Verdict]] (via otter.ai)",
+        "[[738: Taking a Powder With Chowder]] (via Welder)"
+      ],
+      "is_existing": false,
+      "is_known_missing": false,
+      "starting_char": "1"
+    },
+    {
+      "entity_count": 2,
+      "entity_name": "21st Amendment",
+      "entity_origin": {
+        "transcripts\\715.otter.txt": 1,
+        "transcripts\\715.welder.txt": 1
+      },
+      "entity_sourcetexts": {
+        "the 21st Amendment": 2
+      },
+      "entity_type": {
+        "LAW": 2
+      },
+      "grouped_entity_origin": [
+        "[[715: Trial Recap, Part 2]] (via otter.ai, Welder)"
+      ],
+      "is_existing": false,
+      "is_known_missing": false,
+      "starting_char": "2"
+    },
+    {
+      "entity_count": 6,
+      "entity_name": "25th Amendment",
+      "entity_origin": {
+        "transcripts\\380.autosub.srt": 1,
+        "transcripts\\501.autosub.srt": 3,
+        "transcripts\\517.autosub.srt": 1,
+        "transcripts\\518.autosub.srt": 1
+      },
+      "entity_sourcetexts": {
+        "the 25th Amendment": 5,
+        "the 25th Amendment\n\n": 1
+      },
+      "entity_type": {
+        "LAW": 6
+      },
+      "grouped_entity_origin": [
+        "[[380: December 19-20, 2019]] (via AutoSub)",
+        "[[501: November 7-8, 2020]] (via AutoSub)",
+        "[[517: January 5-6, 2021]] (via AutoSub)",
+        "[[518: January 7-8, 2021]] (via AutoSub)"
+      ],
+      "is_existing": false,
+      "is_known_missing": false,
+      "starting_char": "2"
+    },
+    {
+      "entity_count": 79,
+      "entity_name": "2nd Amendment",
+      "entity_origin": {
+        "141: March 20-22, 2018": 1,
+        "143: March 25-31 Part 1": 1,
+        "transcripts\\114.autosub.srt": 1,
+        "transcripts\\12.autosub.srt": 1,
+        "transcripts\\142.autosub.srt": 1,
+        "transcripts\\144.autosub.srt": 2,
+        "transcripts\\194.autosub.srt": 1,
+        "transcripts\\209.autosub.srt": 1,
+        "transcripts\\213.autosub.srt": 1,
+        "transcripts\\222.otter.txt": 2,
+        "transcripts\\248.autosub.srt": 1,
+        "transcripts\\252.autosub.srt": 1,
+        "transcripts\\258.autosub.srt": 1,
+        "transcripts\\262.autosub.srt": 1,
+        "transcripts\\264.autosub.srt": 1,
+        "transcripts\\268.autosub.srt": 1,
+        "transcripts\\272.autosub.srt": 1,
+        "transcripts\\279.otter.txt": 1,
+        "transcripts\\284.autosub.srt": 2,
+        "transcripts\\294.autosub.srt": 1,
+        "transcripts\\298.autosub.srt": 1,
+        "transcripts\\3.autosub.srt": 1,
+        "transcripts\\3.otter.txt": 2,
+        "transcripts\\335.autosub.srt": 1,
+        "transcripts\\368.autosub.srt": 1,
+        "transcripts\\37.autosub.srt": 1,
+        "transcripts\\380.autosub.srt": 1,
+        "transcripts\\389.autosub.srt": 1,
+        "transcripts\\390.autosub.srt": 1,
+        "transcripts\\414.autosub.srt": 1,
+        "transcripts\\433.autosub.srt": 2,
+        "transcripts\\462.autosub.srt": 1,
+        "transcripts\\465.autosub.srt": 1,
+        "transcripts\\466.autosub.srt": 1,
+        "transcripts\\510.autosub.srt": 1,
+        "transcripts\\525.autosub.srt": 2,
+        "transcripts\\526.autosub.srt": 1,
+        "transcripts\\535.autosub.srt": 1,
+        "transcripts\\543.autosub.srt": 1,
+        "transcripts\\554.autosub.srt": 1,
+        "transcripts\\559.autosub.srt": 1,
+        "transcripts\\611.autosub.srt": 1,
+        "transcripts\\64.autosub.srt": 1,
+        "transcripts\\641.autosub.srt": 2,
+        "transcripts\\642.autosub.srt": 1,
+        "transcripts\\660.autosub.srt": 2,
+        "transcripts\\665.otter.txt": 1,
+        "transcripts\\670.autosub.srt": 1,
+        "transcripts\\688.autosub.srt": 1,
+        "transcripts\\69.autosub.srt": 1,
+        "transcripts\\690.autosub.srt": 1,
+        "transcripts\\693.autosub.srt": 1,
+        "transcripts\\712.otter.txt": 1,
+        "transcripts\\714.otter.txt": 2,
+        "transcripts\\714.welder.txt": 1,
+        "transcripts\\715.autosub.srt": 1,
+        "transcripts\\715.otter.txt": 3,
+        "transcripts\\715.welder.txt": 2,
+        "transcripts\\725.otter.txt": 3,
+        "transcripts\\729.otter.txt": 1,
+        "transcripts\\734.autosub.srt": 1,
+        "transcripts\\734.otter.txt": 1,
+        "transcripts\\74.autosub.srt": 1,
+        "transcripts\\8.otter.txt": 1,
+        "transcripts\\83.autosub.srt": 1
+      },
+      "entity_sourcetexts": {
+        "2nd Amendment": 1,
+        "Second Amendment": 13,
+        "The Second Amendment": 4,
+        "The Second Amendment\n\n": 3,
+        "the 2nd Amendment": 5,
+        "the Second Amendment": 47,
+        "the Second Amendment\n\n": 6
+      },
+      "entity_type": {
+        "LAW": 72,
+        "WORK_OF_ART": 7
+      },
+      "grouped_entity_origin": [
+        "[[3: The Secret of 2017]] (via AutoSub, otter.ai)",
+        "[[8: January 26-27, 2017]] (via otter.ai)",
+        "[[12: Jon Rappoport]] (via AutoSub)",
+        "[[37: May 1, 2017]] (via AutoSub)",
+        "[[64: Aug 27-Sep 1, 2015]] (via AutoSub)",
+        "[[69: August 1, 2017]] (via AutoSub)",
+        "[[74: October 4-6, 2015]] (via AutoSub)",
+        "[[83: November 10-12, 2015]] (via AutoSub)",
+        "[[114: Piers Morgan Interview]] (via AutoSub)",
+        "[[141: March 20-22, 2018]] (via Wiki Page)",
+        "[[142: March 23, 2018]] (via AutoSub)",
+        "[[143: March 25-31 Part 1]] (via Wiki Page)",
+        "[[144: March 25-31, Part 2]] (via AutoSub)",
+        "[[194: February 22-24, 2009]] (via AutoSub)",
+        "[[209: Drunk Hotel Interview]] (via AutoSub)",
+        "[[213: October 2, 2018]] (via AutoSub)",
+        "[[222: March 15-19, 2009]] (via otter.ai)",
+        "[[248: January 2, 2019]] (via AutoSub)",
+        "[[252: April 7-8, 2009]] (via AutoSub)",
+        "[[258: April 12-13, 2009]] (via AutoSub)",
+        "[[262: April 14, 2009]] (via AutoSub)",
+        "[[264: February 11-13, 2019]] (via AutoSub)",
+        "[[268: December 17-18, 2012]] (via AutoSub)",
+        "[[272: December 20, 2012]] (via AutoSub)",
+        "[[279: Formulaic Objections]] (via otter.ai)",
+        "[[284: April 12, 2019]] (via AutoSub)",
+        "[[294: January 15-16, 2013]] (via AutoSub)",
+        "[[298: January 20-23, 2013]] (via AutoSub)",
+        "[[335: March 15-22, 2013]] (via AutoSub)",
+        "[[368: November 11-12, 2019]] (via AutoSub)",
+        "[[380: December 19-20, 2019]] (via AutoSub)",
+        "[[389: January 15-17, 2020]] (via AutoSub)",
+        "[[390: Grab Bag Minisode]] (via AutoSub)",
+        "[[414: Bill Cooper's Ambitiously Bad Idea]] (via AutoSub)",
+        "[[433: May 12-13, 2020]] (via AutoSub)",
+        "[[462: July 26, 2020]] (via AutoSub)",
+        "[[465: August 3-4, 2020]] (via AutoSub)",
+        "[[466: August 5-6, 2020]] (via AutoSub)",
+        "[[510: Fourth Time Is Not A Charm]] (via AutoSub)",
+        "[[525: January 27, 2021]] (via AutoSub)",
+        "[[526: January 28-31, 2021]] (via AutoSub)",
+        "[[535: October 16, 2014]] (via AutoSub)",
+        "[[543: March 23-24, 2021]] (via AutoSub)",
+        "[[554: April 30, 2021]] (via AutoSub)",
+        "[[559: Noam Man's Land]] (via AutoSub)",
+        "[[611: October 29, 2021]] (via AutoSub)",
+        "[[641: Formulaic Objections Part 4]] (via AutoSub)",
+        "[[642: January 24, 2022]] (via AutoSub)",
+        "[[660: February 11, 2014]] (via AutoSub)",
+        "[[665: Formulaic Objections Part 6]] (via otter.ai)",
+        "[[670: July 28, 2003]] (via AutoSub)",
+        "[[688: May 25, 2022]] (via AutoSub)",
+        "[[690: May 27, 2022]] (via AutoSub)",
+        "[[693: August 4, 2003]] (via AutoSub)",
+        "[[712: The Decompression Session]] (via otter.ai)",
+        "[[714: Trial Recap, Part 1]] (via otter.ai, Welder)",
+        "[[715: Trial Recap, Part 2]] (via AutoSub, otter.ai, Welder)",
+        "[[725: September 13-14, 2022]] (via otter.ai)",
+        "[[729: September 24, 2022]] (via otter.ai)",
+        "[[734: October 9, 2022]] (via AutoSub, otter.ai)"
+      ],
+      "is_existing": false,
+      "is_known_missing": false,
+      "starting_char": "2"
+    },
+    {
+      "entity_count": 2,
+      "entity_name": "2nd District",
+      "entity_origin": {
+        "transcripts\\404.autosub.srt": 1,
+        "transcripts\\545.autosub.srt": 1
+      },
+      "entity_sourcetexts": {
+        "2nd District": 2
+      },
+      "entity_type": {
+        "GPE": 1,
+        "LOC": 1
+      },
+      "grouped_entity_origin": [
+        "[[404: Mr. Jones Goes To CPAC]] (via AutoSub)",
+        "[[545: March 30-31, 2021]] (via AutoSub)"
+      ],
+      "is_existing": false,
+      "is_known_missing": false,
+      "starting_char": "2"
+    },
+    {
+      "entity_count": 2,
+      "entity_name": "3rd Amendment",
+      "entity_origin": {
+        "transcripts\\654.autosub.srt": 1,
+        "transcripts\\715.autosub.srt": 1
+      },
+      "entity_sourcetexts": {
+        "3rd Amendment": 1,
+        "the 3rd Amendment": 1
+      },
+      "entity_type": {
+        "LAW": 2
+      },
+      "grouped_entity_origin": [
+        "[[654: February 27, 2022]] (via AutoSub)",
+        "[[715: Trial Recap, Part 2]] (via AutoSub)"
+      ],
+      "is_existing": false,
+      "is_known_missing": false,
+      "starting_char": "3"
+    },
+    {
+      "entity_count": 7,
+      "entity_name": "4th Amendment",
+      "entity_origin": {
+        "transcripts\\25(Repost).autosub.srt": 2,
+        "transcripts\\290.autosub.srt": 1,
+        "transcripts\\715.otter.txt": 2,
+        "transcripts\\S011.autosub.srt": 2
+      },
+      "entity_sourcetexts": {
+        "Fourth Amendment": 1,
+        "The Fourth Amendment": 1,
+        "the Fourth Amendment": 3,
+        "the Fourth Amendment\n\n2451": 2
+      },
+      "entity_type": {
+        "EVENT": 2,
+        "LAW": 3,
+        "PRODUCT": 1,
+        "WORK_OF_ART": 1
+      },
+      "grouped_entity_origin": [
+        "25(Repost) (via AutoSub)",
+        "[[290: April 25-26, 2019]] (via AutoSub)",
+        "[[715: Trial Recap, Part 2]] (via otter.ai)",
+        "[[Repost: Episode 25|Repost: Episode #25]] (via AutoSub)"
+      ],
+      "is_existing": false,
+      "is_known_missing": false,
+      "starting_char": "4"
+    },
+    {
+      "entity_count": 15,
+      "entity_name": "5th Amendment",
+      "entity_origin": {
+        "transcripts\\25.autosub.srt": 1,
+        "transcripts\\257.autosub.srt": 1,
+        "transcripts\\630.autosub.srt": 4,
+        "transcripts\\642.autosub.srt": 3,
+        "transcripts\\714.otter.txt": 1,
+        "transcripts\\715.autosub.srt": 2,
+        "transcripts\\715.otter.txt": 2,
+        "transcripts\\732.otter.txt": 1
+      },
+      "entity_sourcetexts": {
+        "Fifth Amendment": 10,
+        "The Fifth Amendment\n\n": 1,
+        "the Fifth Amendment": 4
+      },
+      "entity_type": {
+        "LAW": 15
+      },
+      "grouped_entity_origin": [
+        "[[25: Dennis Montgomery Investigation]] (via AutoSub)",
+        "[[257: January 25, 2019]] (via AutoSub)",
+        "[[630: Mr. Jones Goes to Washington (To Sue Congress)]] (via AutoSub)",
+        "[[642: January 24, 2022]] (via AutoSub)",
+        "[[714: Trial Recap, Part 1]] (via otter.ai)",
+        "[[715: Trial Recap, Part 2]] (via AutoSub, otter.ai)",
+        "[[732: Trial Press Conference]] (via otter.ai)"
+      ],
+      "is_existing": false,
+      "is_known_missing": false,
+      "starting_char": "5"
+    },
+    {
+      "entity_count": 5,
+      "entity_name": "5th Avenue",
+      "entity_origin": {
+        "transcripts\\334.autosub.srt": 1,
+        "transcripts\\355.autosub.srt": 1,
+        "transcripts\\545.autosub.srt": 1,
+        "transcripts\\734.autosub.srt": 1,
+        "transcripts\\734.otter.txt": 1
+      },
+      "entity_sourcetexts": {
+        "5th Avenue": 3,
+        "Fifth Avenue": 2
+      },
+      "entity_type": {
+        "FAC": 5
+      },
+      "grouped_entity_origin": [
+        "[[334: August 21-22, 2019]] (via AutoSub)",
+        "[[355: April 18, 2013]] (via AutoSub)",
+        "[[545: March 30-31, 2021]] (via AutoSub)",
+        "[[734: October 9, 2022]] (via AutoSub, otter.ai)"
+      ],
+      "is_existing": false,
+      "is_known_missing": false,
+      "starting_char": "5"
+    },
+    {
+      "entity_count": 2,
+      "entity_name": "5th District",
+      "entity_origin": {
+        "transcripts\\580.autosub.srt": 1,
+        "transcripts\\653.autosub.srt": 1
+      },
+      "entity_sourcetexts": {
+        "5th District": 2
+      },
+      "entity_type": {
+        "FAC": 1,
+        "LOC": 1
+      },
+      "grouped_entity_origin": [
+        "[[580: July 20-21, 2021]] (via AutoSub)",
+        "[[653: February 25, 2022]] (via AutoSub)"
+      ],
+      "is_existing": false,
+      "is_known_missing": false,
+      "starting_char": "5"
+    },
+    {
+      "entity_count": 3,
+      "entity_name": "7th Amendment",
+      "entity_origin": {
+        "transcripts\\603.autosub.srt": 2,
+        "transcripts\\715.otter.txt": 1
+      },
+      "entity_sourcetexts": {
+        "the 7th Amendment": 1,
+        "the Seventh Amendment": 2
+      },
+      "entity_type": {
+        "LAW": 3
+      },
+      "grouped_entity_origin": [
+        "[[603: October 3-4, 2021]] (via AutoSub)",
+        "[[715: Trial Recap, Part 2]] (via otter.ai)"
+      ],
+      "is_existing": false,
+      "is_known_missing": false,
+      "starting_char": "7"
+    },
+    {
+      "entity_count": 6,
+      "entity_name": "9th Circuit",
+      "entity_origin": {
+        "543: March 23-24, 2021": 1,
+        "transcripts\\11.otter.txt": 1,
+        "transcripts\\16.otter.txt": 4
+      },
+      "entity_sourcetexts": {
+        "9th Circuit": 1,
+        "Ninth Circuit": 1,
+        "The Ninth Circuit": 1,
+        "a Ninth Circuit": 1,
+        "the Ninth Circuit": 2
+      },
+      "entity_type": {
+        "ORG": 6
+      },
+      "grouped_entity_origin": [
+        "[[11: February 10, 2017]] (via otter.ai)",
+        "[[16: February 24, 2017]] (via otter.ai)",
+        "[[543: March 23-24, 2021]] (via Wiki Page)"
+      ],
+      "is_existing": false,
+      "is_known_missing": false,
+      "starting_char": "9"
+    },
+    {
+      "entity_count": 13,
+      "entity_name": "Aaron Dykes",
+      "entity_origin": {
+        "243: April 1-2, 2009": 1,
+        "288: January 7-9, 2013": 1,
+        "331: March 13-14, 2013": 2,
+        "537: July 16-18, 2010": 1,
+        "transcripts\\243.autosub.srt": 1,
+        "transcripts\\258.autosub.srt": 1,
+        "transcripts\\266.autosub.srt": 1,
+        "transcripts\\331.autosub.srt": 1,
+        "transcripts\\537.autosub.srt": 1,
+        "transcripts\\739.autosub.srt": 3
+      },
+      "entity_sourcetexts": {
+        "Aaron Dykes": 13
+      },
+      "entity_type": {
+        "PERSON": 12,
+        "PRODUCT": 1
+      },
+      "grouped_entity_origin": [
+        "[[243: April 1-2, 2009]] (via AutoSub, Wiki Page)",
+        "[[258: April 12-13, 2009]] (via AutoSub)",
+        "[[266: December 14, 2012]] (via AutoSub)",
+        "[[288: January 7-9, 2013]] (via Wiki Page)",
+        "[[331: March 13-14, 2013]] (via AutoSub, Wiki Page)",
+        "[[537: July 16-18, 2010]] (via AutoSub, Wiki Page)",
+        "[[739: Formulaic Objections Part 8]] (via AutoSub)"
+      ],
+      "is_existing": false,
+      "is_known_missing": true,
+      "starting_char": "A"
+    },
+    {
+      "entity_count": 2,
+      "entity_name": "Aaron Lewis",
+      "entity_origin": {
+        "transcripts\\246.autosub.srt": 1,
+        "transcripts\\460.autosub.srt": 1
+      },
+      "entity_sourcetexts": {
+        "Aaron Lewis": 2
+      },
+      "entity_type": {
+        "PERSON": 2
+      },
+      "grouped_entity_origin": [
+        "[[246: April 5-6, 2009]] (via AutoSub)",
+        "[[460: Donk's Dojo]] (via AutoSub)"
+      ],
+      "is_existing": false,
+      "is_known_missing": false,
+      "starting_char": "A"
+    },
+    {
+      "entity_count": 2,
+      "entity_name": "Aaron Paul",
+      "entity_origin": {
+        "transcripts\\344.autosub.srt": 1,
+        "transcripts\\603.autosub.srt": 1
+      },
+      "entity_sourcetexts": {
+        "Aaron Paul": 1,
+        "Aaron Paul\n\n": 1
+      },
+      "entity_type": {
+        "PERSON": 2
+      },
+      "grouped_entity_origin": [
+        "[[344: April 9-10, 2013]] (via AutoSub)",
+        "[[603: October 3-4, 2021]] (via AutoSub)"
+      ],
+      "is_existing": false,
+      "is_known_missing": false,
+      "starting_char": "A"
+    },
+    {
+      "entity_count": 14,
+      "entity_name": "Aaron Rodgers",
+      "entity_origin": {
+        "transcripts\\230C.autosub.srt": 1,
+        "transcripts\\616.autosub.srt": 2,
+        "transcripts\\632.autosub.srt": 1,
+        "transcripts\\635.autosub.srt": 5,
+        "transcripts\\640.autosub.srt": 1,
+        "transcripts\\725.autosub.srt": 2,
+        "transcripts\\725.otter.txt": 2
+      },
+      "entity_sourcetexts": {
+        "Aaron Rodgers": 14
+      },
+      "entity_type": {
+        "PERSON": 14
+      },
+      "grouped_entity_origin": [
+        "[[230C: Obama Deception, Part 3]] (via AutoSub)",
+        "[[616: November 9, 2021]] (via AutoSub)",
+        "[[632: Christmas Message and More]] (via AutoSub)",
+        "[[635: January 6-7, 2022]] (via AutoSub)",
+        "[[640: January 22, 2022]] (via AutoSub)",
+        "[[725: September 13-14, 2022]] (via AutoSub, otter.ai)"
+      ],
+      "is_existing": false,
+      "is_known_missing": false,
+      "starting_char": "A"
+    },
+    {
+      "entity_count": 2,
+      "entity_name": "Aaron Rogers",
+      "entity_origin": {
+        "632: Christmas Message and More": 1,
+        "635: January 6-7, 2022": 1
+      },
+      "entity_sourcetexts": {
+        "Aaron Rogers": 2
+      },
+      "entity_type": {
+        "PERSON": 2
+      },
+      "grouped_entity_origin": [
+        "[[632: Christmas Message and More]] (via Wiki Page)",
+        "[[635: January 6-7, 2022]] (via Wiki Page)"
+      ],
+      "is_existing": false,
+      "is_known_missing": true,
+      "starting_char": "A"
+    },
+    {
+      "entity_count": 36,
+      "entity_name": "Aaron Russo",
+      "entity_origin": {
+        "147: Aaron Russo": 1,
+        "215: March 11-12, 2009": 1,
+        "633: December 30, 2021": 2,
+        "List of Knowledge Fight episodes": 2,
+        "transcripts\\147.autosub.srt": 13,
+        "transcripts\\215.autosub.srt": 3,
+        "transcripts\\626.autosub.srt": 4,
+        "transcripts\\633.autosub.srt": 2,
+        "transcripts\\717.autosub.srt": 2,
+        "transcripts\\717.welder.txt": 3,
+        "transcripts\\734.autosub.srt": 1,
+        "transcripts\\734.otter.txt": 2
+      },
+      "entity_sourcetexts": {
+        "Aaron Russo": 34,
+        "Aaron Russo's": 2
+      },
+      "entity_type": {
+        "ORG": 1,
+        "PERSON": 35
+      },
+      "grouped_entity_origin": [
+        "List of Knowledge Fight episodes (via Wiki Page)",
+        "[[147: Aaron Russo]] (via AutoSub, Wiki Page)",
+        "[[215: March 11-12, 2009]] (via AutoSub, Wiki Page)",
+        "[[626: December 9, 2021]] (via AutoSub)",
+        "[[633: December 30, 2021]] (via AutoSub, Wiki Page)",
+        "[[717: August 17, 2022]] (via AutoSub, Welder)",
+        "[[734: October 9, 2022]] (via AutoSub, otter.ai)"
+      ],
+      "is_existing": false,
+      "is_known_missing": true,
+      "starting_char": "A"
+    },
+    {
+      "entity_count": 3,
+      "entity_name": "Aaron Sorkin",
+      "entity_origin": {
+        "transcripts\\217.autosub.srt": 1,
+        "transcripts\\276.autosub.srt": 1,
+        "transcripts\\560.autosub.srt": 1
+      },
+      "entity_sourcetexts": {
+        "Aaron Sorkin": 3
+      },
+      "entity_type": {
+        "PERSON": 3
+      },
+      "grouped_entity_origin": [
+        "[[217: Space Liars and Dragon Moths]] (via AutoSub)",
+        "[[276: January 1-2, 2013]] (via AutoSub)",
+        "[[560: May 12-13, 2003]] (via AutoSub)"
+      ],
+      "is_existing": false,
+      "is_known_missing": false,
+      "starting_char": "A"
+    },
+    {
+      "entity_count": 3,
+      "entity_name": "Aaron Zelman",
+      "entity_origin": {
+        "167: February 4-5, 2009": 1,
+        "335: March 15-22, 2013": 1,
+        "592: June 12, 2003": 1
+      },
+      "entity_sourcetexts": {
+        "Aaron Zelman": 3
+      },
+      "entity_type": {
+        "PERSON": 3
+      },
+      "grouped_entity_origin": [
+        "[[167: February 4-5, 2009]] (via Wiki Page)",
+        "[[335: March 15-22, 2013]] (via Wiki Page)",
+        "[[592: June 12, 2003]] (via Wiki Page)"
+      ],
+      "is_existing": false,
+      "is_known_missing": true,
+      "starting_char": "A"
+    },
+    {
+      "entity_count": 2,
+      "entity_name": "Abby Boudreau",
+      "entity_origin": {
+        "transcripts\\5.autosub.srt": 1,
+        "transcripts\\5.otter.txt": 1
+      },
+      "entity_sourcetexts": {
+        "Abby Boudreau": 2
+      },
+      "entity_type": {
+        "PERSON": 2
+      },
+      "grouped_entity_origin": [
+        "[[5: January 19, 2017]] (via AutoSub, otter.ai)"
+      ],
+      "is_existing": false,
+      "is_known_missing": false,
+      "starting_char": "A"
+    },
+    {
+      "entity_count": 2,
+      "entity_name": "Abby Newman",
+      "entity_origin": {
+        "transcripts\\647.autosub.srt": 1,
+        "transcripts\\68.autosub.srt": 1
+      },
+      "entity_sourcetexts": {
+        "Abby Newman": 2
+      },
+      "entity_type": {
+        "PERSON": 2
+      },
+      "grouped_entity_origin": [
+        "[[68: September 19-28, 2015]] (via AutoSub)",
+        "[[647: February 8, 2022]] (via AutoSub)"
+      ],
+      "is_existing": false,
+      "is_known_missing": false,
+      "starting_char": "A"
+    },
+    {
+      "entity_count": 2,
+      "entity_name": "Abdullah bin Zayed Al",
+      "entity_origin": {
+        "transcripts\\277.autosub.srt": 1,
+        "transcripts\\293.autosub.srt": 1
+      },
+      "entity_sourcetexts": {
+        "Abdullah bin Zayed Al": 2
+      },
+      "entity_type": {
+        "PERSON": 2
+      },
+      "grouped_entity_origin": [
+        "[[277: March 15, 2019]] (via AutoSub)",
+        "[[293: May 2-3, 2019]] (via AutoSub)"
+      ],
+      "is_existing": false,
+      "is_known_missing": false,
+      "starting_char": "A"
+    },
+    {
+      "entity_count": 2,
+      "entity_name": "Abe Vigoda",
+      "entity_origin": {
+        "transcripts\\127.autosub.srt": 1,
+        "transcripts\\424.autosub.srt": 1
+      },
+      "entity_sourcetexts": {
+        "Abe Vigoda": 2
+      },
+      "entity_type": {
+        "PERSON": 2
+      },
+      "grouped_entity_origin": [
+        "[[127: February 8, 2018]] (via AutoSub)",
+        "[[424: April 21-22, 2020]] (via AutoSub)"
+      ],
+      "is_existing": false,
+      "is_known_missing": false,
+      "starting_char": "A"
+    },
+    {
+      "entity_count": 5,
+      "entity_name": "about Pearl Harbor",
+      "entity_origin": {
+        "380: December 19-20, 2019": 1,
+        "transcripts\\381.autosub.srt": 2,
+        "transcripts\\641.autosub.srt": 1,
+        "transcripts\\80.autosub.srt": 1
+      },
+      "entity_sourcetexts": {
+        "about Pearl Harbor": 5
+      },
+      "entity_type": {
+        "LOC": 5
+      },
+      "grouped_entity_origin": [
+        "[[80: October 16-26, 2015]] (via AutoSub)",
+        "[[380: December 19-20, 2019]] (via Wiki Page)",
+        "[[381: Making It Big With Silent Weapons]] (via AutoSub)",
+        "[[641: Formulaic Objections Part 4]] (via AutoSub)"
+      ],
+      "is_existing": false,
+      "is_known_missing": false,
+      "starting_char": "A"
+    },
+    {
+      "entity_count": 26,
+      "entity_name": "Abraham Lincoln",
+      "entity_origin": {
+        "230A: Obama Deception, Part 1": 1,
+        "transcripts\\148.autosub.srt": 1,
+        "transcripts\\230A.autosub.srt": 2,
+        "transcripts\\230D.autosub.srt": 1,
+        "transcripts\\332.autosub.srt": 1,
+        "transcripts\\339.autosub.srt": 1,
+        "transcripts\\382.autosub.srt": 1,
+        "transcripts\\388.autosub.srt": 3,
+        "transcripts\\4.otter.txt": 3,
+        "transcripts\\401.autosub.srt": 1,
+        "transcripts\\401.otter.txt": 1,
+        "transcripts\\445.autosub.srt": 1,
+        "transcripts\\464.autosub.srt": 1,
+        "transcripts\\516.autosub.srt": 2,
+        "transcripts\\530.autosub.srt": 2,
+        "transcripts\\616.autosub.srt": 1,
+        "transcripts\\626.autosub.srt": 1,
+        "transcripts\\697.autosub.srt": 1,
+        "transcripts\\98.autosub.srt": 1
+      },
+      "entity_sourcetexts": {
+        "Abraham Lincoln": 25,
+        "the Abraham Lincoln": 1
+      },
+      "entity_type": {
+        "PERSON": 26
+      },
+      "grouped_entity_origin": [
+        "[[4: Research and Stand Up]] (via otter.ai)",
+        "[[98: May 2-3, 2012]] (via AutoSub)",
+        "[[148: June 1-3, 2009]] (via AutoSub)",
+        "[[230A: Obama Deception, Part 1]] (via AutoSub, Wiki Page)",
+        "[[230D: Obama Deception, Part 4]] (via AutoSub)",
+        "[[332: Anunnaki Stasis and Emerald Treaties]] (via AutoSub)",
+        "[[339: March 29-April 1, 2013]] (via AutoSub)",
+        "[[382: December 23-27, 2019]] (via AutoSub)",
+        "[[388: January 12-13, 2020]] (via AutoSub)",
+        "[[401: Formulaic Objections Part 3]] (via AutoSub, otter.ai)",
+        "[[445: June 12, 2020]] (via AutoSub)",
+        "[[464: July 31-August 1, 2020]] (via AutoSub)",
+        "[[516: December 31, 2020- January 1, 2021]] (via AutoSub)",
+        "[[530: February 10-11, 2021]] (via AutoSub)",
+        "[[616: November 9, 2021]] (via AutoSub)",
+        "[[626: December 9, 2021]] (via AutoSub)",
+        "[[697: June 29, 2022]] (via AutoSub)"
+      ],
+      "is_existing": false,
+      "is_known_missing": false,
+      "starting_char": "A"
+    },
+    {
+      "entity_count": 3,
+      "entity_name": "Abu Bakar Bashir",
+      "entity_origin": {
+        "transcripts\\720.otter.txt": 1,
+        "transcripts\\720.welder.srt": 1,
+        "transcripts\\720.welder.txt": 1
+      },
+      "entity_sourcetexts": {
+        "Abu Bakar Bashir": 3
+      },
+      "entity_type": {
+        "PERSON": 3
+      },
+      "grouped_entity_origin": [
+        "[[720: August 6, 2003]] (via otter.ai, Welder)"
+      ],
+      "is_existing": false,
+      "is_known_missing": false,
+      "starting_char": "A"
+    },
+    {
+      "entity_count": 2,
+      "entity_name": "Abu Ghraib",
+      "entity_origin": {
+        "transcripts\\253.autosub.srt": 1,
+        "transcripts\\8.otter.txt": 1
+      },
+      "entity_sourcetexts": {
+        "Abu Ghraib": 1,
+        "Abu ghraib": 1
+      },
+      "entity_type": {
+        "FAC": 1,
+        "LOC": 1
+      },
+      "grouped_entity_origin": [
+        "[[8: January 26-27, 2017]] (via otter.ai)",
+        "[[253: January 15, 2019]] (via AutoSub)"
+      ],
+      "is_existing": false,
+      "is_known_missing": false,
+      "starting_char": "A"
+    },
+    {
+      "entity_count": 6,
+      "entity_name": "Academy Award",
+      "entity_origin": {
+        "transcripts\\255.autosub.srt": 3,
+        "transcripts\\280.autosub.srt": 1,
+        "transcripts\\369.autosub.srt": 1,
+        "transcripts\\425.autosub.srt": 1
+      },
+      "entity_sourcetexts": {
+        "Academy Award": 4,
+        "The Academy Award": 1,
+        "the Academy Award": 1
+      },
+      "entity_type": {
+        "PERSON": 4,
+        "WORK_OF_ART": 2
+      },
+      "grouped_entity_origin": [
+        "[[255: September 25, 2011]] (via AutoSub)",
+        "[[280: Raptor Weddings and Sardinian Spiders]] (via AutoSub)",
+        "[[369: November 13, 2019]] (via AutoSub)",
+        "[[425: April 23-24, 2020]] (via AutoSub)"
+      ],
+      "is_existing": false,
+      "is_known_missing": false,
+      "starting_char": "A"
+    },
+    {
+      "entity_count": 2,
+      "entity_name": "Accelerate",
+      "entity_origin": {
+        "transcripts\\480.autosub.srt": 1,
+        "transcripts\\652.autosub.srt": 1
+      },
+      "entity_sourcetexts": {
+        "Accelerate": 2
+      },
+      "entity_type": {
+        "ORG": 2
+      },
+      "grouped_entity_origin": [
+        "[[480: September 9-10, 2020]] (via AutoSub)",
+        "[[652: February 21-24, 2022]] (via AutoSub)"
+      ],
+      "is_existing": false,
+      "is_known_missing": false,
+      "starting_char": "A"
+    },
+    {
+      "entity_count": 5,
+      "entity_name": "Accelerationist",
+      "entity_origin": {
+        "transcripts\\347.autosub.srt": 1,
+        "transcripts\\439.autosub.srt": 1,
+        "transcripts\\441.autosub.srt": 1,
+        "transcripts\\512.autosub.srt": 1,
+        "transcripts\\526.autosub.srt": 1
+      },
+      "entity_sourcetexts": {
+        "Accelerationist": 5
+      },
+      "entity_type": {
+        "NORP": 5
+      },
+      "grouped_entity_origin": [
+        "[[347: September 23, 2019]] (via AutoSub)",
+        "[[439: May 29-31, 2020]] (via AutoSub)",
+        "[[441: June 3-4, 2020]] (via AutoSub)",
+        "[[512: December 16-17, 2020]] (via AutoSub)",
+        "[[526: January 28-31, 2021]] (via AutoSub)"
+      ],
+      "is_existing": false,
+      "is_known_missing": false,
+      "starting_char": "A"
+    },
+    {
+      "entity_count": 4,
+      "entity_name": "Access Hollywood",
+      "entity_origin": {
+        "112: December 15, 2017": 1,
+        "transcripts\\112.autosub.srt": 2,
+        "transcripts\\113.autosub.srt": 1
+      },
+      "entity_sourcetexts": {
+        "Access Hollywood": 3,
+        "the Access Hollywood": 1
+      },
+      "entity_type": {
+        "FAC": 2,
+        "PRODUCT": 2
+      },
+      "grouped_entity_origin": [
+        "[[112: December 15, 2017]] (via AutoSub, Wiki Page)",
+        "[[113: February 21-23, 2014]] (via AutoSub)"
+      ],
+      "is_existing": false,
+      "is_known_missing": false,
+      "starting_char": "A"
+    },
+    {
+      "entity_count": 9,
+      "entity_name": "Acme Brick",
+      "entity_origin": {
+        "440: June 1-2, 2020": 3,
+        "transcripts\\440.autosub.srt": 4,
+        "transcripts\\441.autosub.srt": 2
+      },
+      "entity_sourcetexts": {
+        "Acme\r\n    Brick": 1,
+        "Acme Brick": 8
+      },
+      "entity_type": {
+        "PERSON": 9
+      },
+      "grouped_entity_origin": [
+        "[[440: June 1-2, 2020]] (via AutoSub, Wiki Page)",
+        "[[441: June 3-4, 2020]] (via AutoSub)"
+      ],
+      "is_existing": false,
+      "is_known_missing": false,
+      "starting_char": "A"
+    },
+    {
+      "entity_count": 4,
+      "entity_name": "Activating",
+      "entity_origin": {
+        "transcripts\\409.autosub.srt": 1,
+        "transcripts\\463.autosub.srt": 1,
+        "transcripts\\576.autosub.srt": 1,
+        "transcripts\\711.autosub.srt": 1
+      },
+      "entity_sourcetexts": {
+        "Activating": 4
+      },
+      "entity_type": {
+        "GPE": 4
+      },
+      "grouped_entity_origin": [
+        "[[409: The Lionel Countdown]] (via AutoSub)",
+        "[[463: July 28-30, 2020]] (via AutoSub)",
+        "[[576: July 9, 2021]] (via AutoSub)",
+        "[[711: August 2, 2022]] (via AutoSub)"
+      ],
+      "is_existing": false,
+      "is_known_missing": false,
+      "starting_char": "A"
+    },
+    {
+      "entity_count": 25,
+      "entity_name": "Adam Carolla",
+      "entity_origin": {
+        "86: September 22, 2017": 1,
+        "transcripts\\15.autosub.srt": 1,
+        "transcripts\\15.otter.txt": 1,
+        "transcripts\\178.autosub.srt": 1,
+        "transcripts\\180.autosub.srt": 1,
+        "transcripts\\30.autosub.srt": 1,
+        "transcripts\\314.autosub.srt": 1,
+        "transcripts\\316.autosub.srt": 1,
+        "transcripts\\35.autosub.srt": 1,
+        "transcripts\\403.autosub.srt": 1,
+        "transcripts\\460.autosub.srt": 1,
+        "transcripts\\49.autosub.srt": 2,
+        "transcripts\\56.autosub.srt": 1,
+        "transcripts\\632.autosub.srt": 1,
+        "transcripts\\645.autosub.srt": 1,
+        "transcripts\\652.autosub.srt": 1,
+        "transcripts\\703.autosub.srt": 1,
+        "transcripts\\86.autosub.srt": 6,
+        "transcripts\\S004.autosub.srt": 1
+      },
+      "entity_sourcetexts": {
+        "Adam Carolla": 24,
+        "this Adam Carolla": 1
+      },
+      "entity_type": {
+        "PERSON": 25
+      },
+      "grouped_entity_origin": [
+        "[[15: February 20-21, 2017]] (via AutoSub, otter.ai)",
+        "[[30: April 14, 2017]] (via AutoSub)",
+        "[[35: Custody Press Conference]] (via AutoSub)",
+        "[[49: July 6-13. 2015]] (via AutoSub)",
+        "[[56: July 22-Aug 11, 2015]] (via AutoSub)",
+        "[[86: September 22, 2017]] (via AutoSub, Wiki Page)",
+        "[[178: Rowdy Roddy Piper w/ Marty DeRosa]] (via AutoSub)",
+        "[[180: Heresy and God Kings]] (via AutoSub)",
+        "[[314: February 14-15, 2013]] (via AutoSub)",
+        "[[316: July 1, 2019]] (via AutoSub)",
+        "[[403: February 24, 2020]] (via AutoSub)",
+        "[[460: Donk's Dojo]] (via AutoSub)",
+        "[[632: Christmas Message and More]] (via AutoSub)",
+        "[[645: November 4, 2014]] (via AutoSub)",
+        "[[652: February 21-24, 2022]] (via AutoSub)",
+        "[[703: 9/11, Part 1]] (via AutoSub)",
+        "[[TWTWYTT Special]] (via AutoSub)"
+      ],
+      "is_existing": false,
+      "is_known_missing": true,
+      "starting_char": "A"
+    },
+    {
+      "entity_count": 2,
+      "entity_name": "Adam Carter",
+      "entity_origin": {
+        "398: February 9-10, 2020": 1,
+        "transcripts\\398.autosub.srt": 1
+      },
+      "entity_sourcetexts": {
+        "Adam Carter": 1,
+        "Adam Carter's": 1
+      },
+      "entity_type": {
+        "PERSON": 2
+      },
+      "grouped_entity_origin": [
+        "[[398: February 9-10, 2020]] (via AutoSub, Wiki Page)"
+      ],
+      "is_existing": false,
+      "is_known_missing": true,
+      "starting_char": "A"
+    },
+    {
+      "entity_count": 11,
+      "entity_name": "Adam Curry",
+      "entity_origin": {
+        "72: August 9, 2017": 2,
+        "transcripts\\425.autosub.srt": 1,
+        "transcripts\\72.autosub.srt": 8
+      },
+      "entity_sourcetexts": {
+        "Adam Curry": 11
+      },
+      "entity_type": {
+        "PERSON": 11
+      },
+      "grouped_entity_origin": [
+        "[[72: August 9, 2017]] (via AutoSub, Wiki Page)",
+        "[[425: April 23-24, 2020]] (via AutoSub)"
+      ],
+      "is_existing": false,
+      "is_known_missing": false,
+      "starting_char": "A"
+    },
+    {
+      "entity_count": 2,
+      "entity_name": "Adam DeVine",
+      "entity_origin": {
+        "transcripts\\146.autosub.srt": 1,
+        "transcripts\\378.autosub.srt": 1
+      },
+      "entity_sourcetexts": {
+        "Adam DeVine": 2
+      },
+      "entity_type": {
+        "PERSON": 2
+      },
+      "grouped_entity_origin": [
+        "[[146: April 4, 2018]] (via AutoSub)",
+        "[[378: Formulaic Objections Part 2]] (via AutoSub)"
+      ],
+      "is_existing": false,
+      "is_known_missing": false,
+      "starting_char": "A"
+    },
+    {
+      "entity_count": 34,
+      "entity_name": "Adam Lanza",
+      "entity_origin": {
+        "267: December 16, 2012": 1,
+        "272: December 20, 2012": 1,
+        "294: January 15-16, 2013": 1,
+        "603: October 3-4, 2021": 1,
+        "transcripts\\268.autosub.srt": 3,
+        "transcripts\\269.autosub.srt": 1,
+        "transcripts\\272.autosub.srt": 1,
+        "transcripts\\283.autosub.srt": 1,
+        "transcripts\\294.autosub.srt": 1,
+        "transcripts\\297.autosub.srt": 2,
+        "transcripts\\344.autosub.srt": 2,
+        "transcripts\\378.autosub.srt": 1,
+        "transcripts\\378.otter.txt": 2,
+        "transcripts\\463.autosub.srt": 1,
+        "transcripts\\603.autosub.srt": 2,
+        "transcripts\\641.autosub.srt": 2,
+        "transcripts\\685.otter.txt": 1,
+        "transcripts\\711.autosub.srt": 2,
+        "transcripts\\712.autosub.srt": 1,
+        "transcripts\\712.otter.txt": 1,
+        "transcripts\\725.autosub.srt": 1,
+        "transcripts\\725.otter.txt": 1,
+        "transcripts\\732.autosub.srt": 2,
+        "transcripts\\732.otter.txt": 2
+      },
+      "entity_sourcetexts": {
+        "Adam Lanza": 28,
+        "Adam Lanza's": 6
+      },
+      "entity_type": {
+        "PERSON": 34
+      },
+      "grouped_entity_origin": [
+        "[[267: December 16, 2012]] (via Wiki Page)",
+        "[[268: December 17-18, 2012]] (via AutoSub)",
+        "[[269: December 19, 2012]] (via AutoSub)",
+        "[[272: December 20, 2012]] (via AutoSub, Wiki Page)",
+        "[[283: January 4-6, 2013]] (via AutoSub)",
+        "[[294: January 15-16, 2013]] (via AutoSub, Wiki Page)",
+        "[[297: January 17-18, 2013]] (via AutoSub)",
+        "[[344: April 9-10, 2013]] (via AutoSub)",
+        "[[378: Formulaic Objections Part 2]] (via AutoSub, otter.ai)",
+        "[[463: July 28-30, 2020]] (via AutoSub)",
+        "[[603: October 3-4, 2021]] (via AutoSub, Wiki Page)",
+        "[[641: Formulaic Objections Part 4]] (via AutoSub)",
+        "[[685: Formulaic Objections Part 7]] (via otter.ai)",
+        "[[711: August 2, 2022]] (via AutoSub)",
+        "[[712: The Decompression Session]] (via AutoSub, otter.ai)",
+        "[[725: September 13-14, 2022]] (via AutoSub, otter.ai)",
+        "[[732: Trial Press Conference]] (via AutoSub, otter.ai)"
+      ],
+      "is_existing": true,
+      "is_known_missing": false,
+      "starting_char": "A"
+    },
+    {
+      "entity_count": 5,
+      "entity_name": "Adam Sandler",
+      "entity_origin": {
+        "transcripts\\358.autosub.srt": 1,
+        "transcripts\\422.autosub.srt": 1,
+        "transcripts\\443.autosub.srt": 1,
+        "transcripts\\531.autosub.srt": 2
+      },
+      "entity_sourcetexts": {
+        "Adam Sandler": 4,
+        "Adam Sandler's": 1
+      },
+      "entity_type": {
+        "PERSON": 5
+      },
+      "grouped_entity_origin": [
+        "[[358: October 18, 2019]] (via AutoSub)",
+        "[[422: April 17, 2020]] (via AutoSub)",
+        "[[443: June 9, 2020]] (via AutoSub)",
+        "[[531: February 14, 2021]] (via AutoSub)"
+      ],
+      "is_existing": false,
+      "is_known_missing": false,
+      "starting_char": "A"
+    },
+    {
+      "entity_count": 52,
+      "entity_name": "Adam Schiff",
+      "entity_origin": {
+        "26: March 30 (Special Report)": 1,
+        "370: November 14-15, 2019": 1,
+        "394: January 31, 2020": 1,
+        "453: July 2, 2020": 1,
+        "642: January 24, 2022": 1,
+        "transcripts\\104.autosub.srt": 1,
+        "transcripts\\116.autosub.srt": 1,
+        "transcripts\\135.autosub.srt": 1,
+        "transcripts\\145.autosub.srt": 2,
+        "transcripts\\149.autosub.srt": 1,
+        "transcripts\\188.autosub.srt": 1,
+        "transcripts\\236.autosub.srt": 1,
+        "transcripts\\250.autosub.srt": 1,
+        "transcripts\\257.autosub.srt": 1,
+        "transcripts\\27.autosub.srt": 1,
+        "transcripts\\28.autosub.srt": 1,
+        "transcripts\\31.autosub.srt": 1,
+        "transcripts\\360.autosub.srt": 1,
+        "transcripts\\370.autosub.srt": 8,
+        "transcripts\\38.autosub.srt": 1,
+        "transcripts\\380.autosub.srt": 1,
+        "transcripts\\394.autosub.srt": 7,
+        "transcripts\\395.autosub.srt": 1,
+        "transcripts\\396.autosub.srt": 1,
+        "transcripts\\48.autosub.srt": 1,
+        "transcripts\\493.autosub.srt": 1,
+        "transcripts\\52.autosub.srt": 1,
+        "transcripts\\554.autosub.srt": 1,
+        "transcripts\\58.autosub.srt": 1,
+        "transcripts\\620.autosub.srt": 2,
+        "transcripts\\642.autosub.srt": 4,
+        "transcripts\\652.autosub.srt": 1,
+        "transcripts\\735.autosub.srt": 1,
+        "transcripts\\735.otter.txt": 1
+      },
+      "entity_sourcetexts": {
+        "Adam Schiff": 51,
+        "this Adam Schiff": 1
+      },
+      "entity_type": {
+        "FAC": 5,
+        "ORG": 1,
+        "PERSON": 46
+      },
+      "grouped_entity_origin": [
+        "[[26: March 30 (Special Report)]] (via Wiki Page)",
+        "[[27: March 31, 2017]] (via AutoSub)",
+        "[[28: How Not To Cover Alex Jones]] (via AutoSub)",
+        "[[31: April 17, 2017]] (via AutoSub)",
+        "[[38: 30 Hour Marathon Coverage]] (via AutoSub)",
+        "[[48: May 31, 2017]] (via AutoSub)",
+        "[[52: July 14-21, 2015]] (via AutoSub)",
+        "[[58: June 23, 2017]] (via AutoSub)",
+        "[[104: November 20, 2017]] (via AutoSub)",
+        "[[116: January 5, 2018]] (via AutoSub)",
+        "[[135: The Wikileaks Press Conference]] (via AutoSub)",
+        "[[145: April 2, 2018]] (via AutoSub)",
+        "[[149: The Press Conference]] (via AutoSub)",
+        "[[188: August 1, 2018]] (via AutoSub)",
+        "[[236: December 4-5, 2018]] (via AutoSub)",
+        "[[250: Remote Poisoners And Crypto Bigotry]] (via AutoSub)",
+        "[[257: January 25, 2019]] (via AutoSub)",
+        "[[360: October 23, 2019]] (via AutoSub)",
+        "[[370: November 14-15, 2019]] (via AutoSub, Wiki Page)",
+        "[[380: December 19-20, 2019]] (via AutoSub)",
+        "[[394: January 31, 2020]] (via AutoSub, Wiki Page)",
+        "[[395: Ghosts Of Caucuses Past]] (via AutoSub)",
+        "[[396: February 6, 2020]] (via AutoSub)",
+        "[[453: July 2, 2020]] (via Wiki Page)",
+        "[[493: February 16, 2016]] (via AutoSub)",
+        "[[554: April 30, 2021]] (via AutoSub)",
+        "[[620: November 23, 2021]] (via AutoSub)",
+        "[[642: January 24, 2022]] (via AutoSub, Wiki Page)",
+        "[[652: February 21-24, 2022]] (via AutoSub)",
+        "[[735: October 12, 2022]] (via AutoSub, otter.ai)"
+      ],
+      "is_existing": false,
+      "is_known_missing": true,
+      "starting_char": "A"
+    },
+    {
+      "entity_count": 12,
+      "entity_name": "Adan Salazar",
+      "entity_origin": {
+        "242: December 18-19, 2018": 1,
+        "343: April 3-8, 2013": 2,
+        "413: March 27, 2020": 1,
+        "635: January 6-7, 2022": 1,
+        "739: Formulaic Objections Part 8": 1,
+        "Adan Salazar": 1,
+        "Texas Sandy Hook Lawsuit (Heslin v. Jones)": 1,
+        "transcripts\\685.otter.txt": 1,
+        "transcripts\\739.autosub.srt": 3
+      },
+      "entity_sourcetexts": {
+        "Adan Salazar": 10,
+        "Adan Salazar's": 2
+      },
+      "entity_type": {
+        "ORG": 4,
+        "PERSON": 8
+      },
+      "grouped_entity_origin": [
+        "739: Formulaic Objections Part 8 (via Wiki Page)",
+        "Adan Salazar (via Wiki Page)",
+        "Texas Sandy Hook Lawsuit (Heslin v. Jones) (via Wiki Page)",
+        "[[242: December 18-19, 2018]] (via Wiki Page)",
+        "[[343: April 3-8, 2013]] (via Wiki Page)",
+        "[[413: March 27, 2020]] (via Wiki Page)",
+        "[[635: January 6-7, 2022]] (via Wiki Page)",
+        "[[685: Formulaic Objections Part 7]] (via otter.ai)",
+        "[[739: Formulaic Objections Part 8]] (via AutoSub)"
+      ],
+      "is_existing": true,
+      "is_known_missing": false,
+      "starting_char": "A"
+    },
+    {
+      "entity_count": 2,
+      "entity_name": "Adjustment Bureau",
+      "entity_origin": {
+        "transcripts\\199.autosub.srt": 1,
+        "transcripts\\566.autosub.srt": 1
+      },
+      "entity_sourcetexts": {
+        "The Adjustment Bureau": 2
+      },
+      "entity_type": {
+        "ORG": 2
+      },
+      "grouped_entity_origin": [
+        "[[199: August 29, 2018]] (via AutoSub)",
+        "[[566: May 21, 2003]] (via AutoSub)"
+      ],
+      "is_existing": false,
+      "is_known_missing": false,
+      "starting_char": "A"
+    },
+    {
+      "entity_count": 7,
+      "entity_name": "Administration",
+      "entity_origin": {
+        "transcripts\\17.autosub.srt": 1,
+        "transcripts\\310.autosub.srt": 1,
+        "transcripts\\399.autosub.srt": 1,
+        "transcripts\\403.autosub.srt": 1,
+        "transcripts\\422.autosub.srt": 1,
+        "transcripts\\63.autosub.srt": 1,
+        "transcripts\\661.autosub.srt": 1
+      },
+      "entity_sourcetexts": {
+        "Administration": 7
+      },
+      "entity_type": {
+        "ORG": 7
+      },
+      "grouped_entity_origin": [
+        "[[17: February 7, 2017]] (via AutoSub)",
+        "[[63: July 12, 2017]] (via AutoSub)",
+        "[[310: June 13-14, 2019]] (via AutoSub)",
+        "[[399: February 12-14, 2020]] (via AutoSub)",
+        "[[403: February 24, 2020]] (via AutoSub)",
+        "[[422: April 17, 2020]] (via AutoSub)",
+        "[[661: March 17, 2022]] (via AutoSub)"
+      ],
+      "is_existing": false,
+      "is_known_missing": false,
+      "starting_char": "A"
+    },
+    {
+      "entity_count": 2,
+      "entity_name": "Ado Jordan",
+      "entity_origin": {
+        "transcripts\\709.autosub.srt": 1,
+        "transcripts\\727.autosub.srt": 1
+      },
+      "entity_sourcetexts": {
+        "Ado Jordan": 2
+      },
+      "entity_type": {
+        "PERSON": 2
+      },
+      "grouped_entity_origin": [
+        "[[709: 2 Dan's 2 War]] (via AutoSub)",
+        "[[727: Chatting with Sebastian Murdock]] (via AutoSub)"
+      ],
+      "is_existing": false,
+      "is_known_missing": false,
+      "starting_char": "A"
+    },
+    {
+      "entity_count": 6,
+      "entity_name": "Adolf Hitler",
+      "entity_origin": {
+        "transcripts\\212.autosub.srt": 1,
+        "transcripts\\279.otter.txt": 1,
+        "transcripts\\374.autosub.srt": 1,
+        "transcripts\\384.autosub.srt": 1,
+        "transcripts\\575.autosub.srt": 1,
+        "transcripts\\628.autosub.srt": 1
+      },
+      "entity_sourcetexts": {
+        "Adolf Hitler": 5,
+        "Adolf Hitler's": 1
+      },
+      "entity_type": {
+        "ORG": 1,
+        "PERSON": 1,
+        "WORK_OF_ART": 4
+      },
+      "grouped_entity_origin": [
+        "[[212: Matrix Schemes and Billions In Liens]] (via AutoSub)",
+        "[[279: Formulaic Objections]] (via otter.ai)",
+        "[[374: November 25, 2019]] (via AutoSub)",
+        "[[384: January 3, 2020]] (via AutoSub)",
+        "[[575: July 4, 2021]] (via AutoSub)",
+        "[[628: July 10, 2003]] (via AutoSub)"
+      ],
+      "is_existing": false,
+      "is_known_missing": false,
+      "starting_char": "A"
+    },
+    {
+      "entity_count": 2,
+      "entity_name": "Adult Swim",
+      "entity_origin": {
+        "transcripts\\180.autosub.srt": 1,
+        "transcripts\\660.autosub.srt": 1
+      },
+      "entity_sourcetexts": {
+        "Adult Swim": 2
+      },
+      "entity_type": {
+        "ORG": 1,
+        "PERSON": 1
+      },
+      "grouped_entity_origin": [
+        "[[180: Heresy and God Kings]] (via AutoSub)",
+        "[[660: February 11, 2014]] (via AutoSub)"
+      ],
+      "is_existing": false,
+      "is_known_missing": false,
+      "starting_char": "A"
+    },
+    {
+      "entity_count": 2,
+      "entity_name": "Advanced Military Research System",
+      "entity_origin": {
+        "transcripts\\720.welder.srt": 1,
+        "transcripts\\720.welder.txt": 1
+      },
+      "entity_sourcetexts": {
+        "the Advanced Military Research System": 2
+      },
+      "entity_type": {
+        "ORG": 2
+      },
+      "grouped_entity_origin": [
+        "[[720: August 6, 2003]] (via Welder)"
+      ],
+      "is_existing": false,
+      "is_known_missing": false,
+      "starting_char": "A"
+    },
+    {
+      "entity_count": 2,
+      "entity_name": "Adventure Time",
+      "entity_origin": {
+        "transcripts\\392.autosub.srt": 1,
+        "transcripts\\724.otter.txt": 1
+      },
+      "entity_sourcetexts": {
+        "Adventure Time": 2
+      },
+      "entity_type": {
+        "PRODUCT": 1,
+        "WORK_OF_ART": 1
+      },
+      "grouped_entity_origin": [
+        "[[392: January 24, 2020]] (via AutoSub)",
+        "[[724: August 7-11, 2003]] (via otter.ai)"
+      ],
+      "is_existing": false,
+      "is_known_missing": false,
+      "starting_char": "A"
+    },
+    {
+      "entity_count": 2,
+      "entity_name": "Adventures",
+      "entity_origin": {
+        "transcripts\\290.autosub.srt": 1,
+        "transcripts\\291.autosub.srt": 1
+      },
+      "entity_sourcetexts": {
+        "Adventures": 1,
+        "Adventures\n\n": 1
+      },
+      "entity_type": {
+        "ORG": 2
+      },
+      "grouped_entity_origin": [
+        "[[290: April 25-26, 2019]] (via AutoSub)",
+        "[[291: Feline Contessas And Canine Capitalists]] (via AutoSub)"
+      ],
+      "is_existing": false,
+      "is_known_missing": false,
+      "starting_char": "A"
+    },
+    {
+      "entity_count": 3,
+      "entity_name": "Adverse Events",
+      "entity_origin": {
+        "transcripts\\435.autosub.srt": 1,
+        "transcripts\\441.autosub.srt": 1,
+        "transcripts\\625.autosub.srt": 1
+      },
+      "entity_sourcetexts": {
+        "Adverse Events": 3
+      },
+      "entity_type": {
+        "PERSON": 3
+      },
+      "grouped_entity_origin": [
+        "[[435: May 18-21, 2020]] (via AutoSub)",
+        "[[441: June 3-4, 2020]] (via AutoSub)",
+        "[[625: December 5, 2021]] (via AutoSub)"
+      ],
+      "is_existing": false,
+      "is_known_missing": false,
+      "starting_char": "A"
+    },
+    {
+      "entity_count": 2,
+      "entity_name": "Advertiser",
+      "entity_origin": {
+        "transcripts\\197.autosub.srt": 1,
+        "transcripts\\490.autosub.srt": 1
+      },
+      "entity_sourcetexts": {
+        "Advertiser": 2
+      },
+      "entity_type": {
+        "NORP": 2
+      },
+      "grouped_entity_origin": [
+        "[[197: Jared Holt from the Sh!tpost Podcast]] (via AutoSub)",
+        "[[490: October 9, 2020]] (via AutoSub)"
+      ],
+      "is_existing": false,
+      "is_known_missing": false,
+      "starting_char": "A"
+    },
+    {
+      "entity_count": 5,
+      "entity_name": "Advisory Board",
+      "entity_origin": {
+        "transcripts\\259.autosub.srt": 1,
+        "transcripts\\34.autosub.srt": 2,
+        "transcripts\\37.autosub.srt": 1,
+        "transcripts\\616.autosub.srt": 1
+      },
+      "entity_sourcetexts": {
+        "Advisory Board": 4,
+        "The Advisory Board": 1
+      },
+      "entity_type": {
+        "ORG": 5
+      },
+      "grouped_entity_origin": [
+        "[[34: April 25, 2017]] (via AutoSub)",
+        "[[37: May 1, 2017]] (via AutoSub)",
+        "[[259: January 27-29, 2019]] (via AutoSub)",
+        "[[616: November 9, 2021]] (via AutoSub)"
+      ],
+      "is_existing": false,
+      "is_known_missing": false,
+      "starting_char": "A"
+    },
+    {
+      "entity_count": 5,
+      "entity_name": "Affiliates",
+      "entity_origin": {
+        "transcripts\\410.autosub.srt": 1,
+        "transcripts\\448.autosub.srt": 1,
+        "transcripts\\45.autosub.srt": 1,
+        "transcripts\\53.autosub.srt": 1,
+        "transcripts\\659.autosub.srt": 1
+      },
+      "entity_sourcetexts": {
+        "Affiliates": 5
+      },
+      "entity_type": {
+        "GPE": 3,
+        "ORG": 2
+      },
+      "grouped_entity_origin": [
+        "[[45: May 25, 2017]] (via AutoSub)",
+        "[[53: June 12, 2017]] (via AutoSub)",
+        "[[410: March 19-20, 2020]] (via AutoSub)",
+        "[[448: June 21-22, 2020]] (via AutoSub)",
+        "[[659: July 21-23, 2003]] (via AutoSub)"
+      ],
+      "is_existing": false,
+      "is_known_missing": false,
+      "starting_char": "A"
+    },
+    {
+      "entity_count": 14,
+      "entity_name": "Affordable Care Act",
+      "entity_origin": {
+        "47: June 19-July 5, 2015": 1,
+        "transcripts\\105.autosub.srt": 1,
+        "transcripts\\113.autosub.srt": 2,
+        "transcripts\\2.autosub.srt": 1,
+        "transcripts\\2.otter.txt": 1,
+        "transcripts\\230A.autosub.srt": 2,
+        "transcripts\\253.autosub.srt": 1,
+        "transcripts\\335.autosub.srt": 1,
+        "transcripts\\488.autosub.srt": 1,
+        "transcripts\\51.autosub.srt": 2,
+        "transcripts\\57.autosub.srt": 1
+      },
+      "entity_sourcetexts": {
+        "Affordable Care Act": 9,
+        "The Affordable Care Act": 2,
+        "The Affordable Care Act\n\n": 2,
+        "the\r\n    Affordable Care Act": 1
+      },
+      "entity_type": {
+        "PERSON": 1,
+        "PRODUCT": 1,
+        "WORK_OF_ART": 12
+      },
+      "grouped_entity_origin": [
+        "[[2: December 31, 1999 (Y2K)]] (via AutoSub, otter.ai)",
+        "[[47: June 19-July 5, 2015]] (via Wiki Page)",
+        "[[51: June 6, 2017]] (via AutoSub)",
+        "[[57: August 12-16, 2015]] (via AutoSub)",
+        "[[105: March 18, 2014]] (via AutoSub)",
+        "[[113: February 21-23, 2014]] (via AutoSub)",
+        "[[230A: Obama Deception, Part 1]] (via AutoSub)",
+        "[[253: January 15, 2019]] (via AutoSub)",
+        "[[335: March 15-22, 2013]] (via AutoSub)",
+        "[[488: The First Debate Spectacular]] (via AutoSub)"
+      ],
+      "is_existing": false,
+      "is_known_missing": false,
+      "starting_char": "A"
+    },
+    {
+      "entity_count": 106,
+      "entity_name": "Afghanistan",
+      "entity_origin": {
+        "163: January 27-29, 2009": 1,
+        "248: January 2, 2019": 1,
+        "48: May 31, 2017": 1,
+        "572: June 28-30, 2021": 1,
+        "588: August 15, 2021": 1,
+        "595: Boulder Missiles and Gettysburg Nukes": 1,
+        "605: June 17, 2003": 1,
+        "78: October 12-15, 2015": 1,
+        "transcripts\\124.autosub.srt": 1,
+        "transcripts\\136.autosub.srt": 1,
+        "transcripts\\147.autosub.srt": 1,
+        "transcripts\\211.autosub.srt": 1,
+        "transcripts\\227.autosub.srt": 1,
+        "transcripts\\230C.autosub.srt": 4,
+        "transcripts\\248.autosub.srt": 9,
+        "transcripts\\281.autosub.srt": 1,
+        "transcripts\\30.autosub.srt": 1,
+        "transcripts\\310.otter.txt": 1,
+        "transcripts\\33.autosub.srt": 1,
+        "transcripts\\340.autosub.srt": 2,
+        "transcripts\\353.autosub.srt": 2,
+        "transcripts\\354.autosub.srt": 1,
+        "transcripts\\364.autosub.srt": 1,
+        "transcripts\\373.autosub.srt": 1,
+        "transcripts\\377.autosub.srt": 1,
+        "transcripts\\383.autosub.srt": 1,
+        "transcripts\\384.autosub.srt": 1,
+        "transcripts\\386.autosub.srt": 1,
+        "transcripts\\41.autosub.srt": 1,
+        "transcripts\\439.autosub.srt": 1,
+        "transcripts\\488.autosub.srt": 1,
+        "transcripts\\520.autosub.srt": 1,
+        "transcripts\\522.autosub.srt": 2,
+        "transcripts\\542.autosub.srt": 1,
+        "transcripts\\553.autosub.srt": 1,
+        "transcripts\\572.autosub.srt": 4,
+        "transcripts\\587.autosub.srt": 2,
+        "transcripts\\588.autosub.srt": 11,
+        "transcripts\\589.autosub.srt": 2,
+        "transcripts\\595.autosub.srt": 3,
+        "transcripts\\60.autosub.srt": 1,
+        "transcripts\\602.autosub.srt": 2,
+        "transcripts\\602.otter.txt": 2,
+        "transcripts\\605.autosub.srt": 1,
+        "transcripts\\623.autosub.srt": 1,
+        "transcripts\\628.autosub.srt": 2,
+        "transcripts\\644.autosub.srt": 1,
+        "transcripts\\664.autosub.srt": 2,
+        "transcripts\\664.otter.txt": 2,
+        "transcripts\\703.autosub.srt": 2,
+        "transcripts\\730.otter.txt": 1,
+        "transcripts\\731.autosub.srt": 1,
+        "transcripts\\731.otter.txt": 1,
+        "transcripts\\77.autosub.srt": 4,
+        "transcripts\\83.autosub.srt": 1,
+        "transcripts\\86.autosub.srt": 1,
+        "transcripts\\9.autosub.srt": 1,
+        "transcripts\\9.otter.txt": 4,
+        "transcripts\\93.autosub.srt": 3,
+        "transcripts\\98.autosub.srt": 2
+      },
+      "entity_sourcetexts": {
+        "Afghanistan": 106
+      },
+      "entity_type": {
+        "GPE": 106
+      },
+      "grouped_entity_origin": [
+        "[[9: Joe Rogan Appearance]] (via AutoSub, otter.ai)",
+        "[[30: April 14, 2017]] (via AutoSub)",
+        "[[33: April 22, 2017]] (via AutoSub)",
+        "[[41: May 12, 2017]] (via AutoSub)",
+        "[[48: May 31, 2017]] (via Wiki Page)",
+        "[[60: Mars Colonies]] (via AutoSub)",
+        "[[77: August 23, 2017]] (via AutoSub)",
+        "[[78: October 12-15, 2015]] (via Wiki Page)",
+        "[[83: November 10-12, 2015]] (via AutoSub)",
+        "[[86: September 22, 2017]] (via AutoSub)",
+        "[[93: 2015 Investigation Last Looks]] (via AutoSub)",
+        "[[98: May 2-3, 2012]] (via AutoSub)",
+        "[[124: March 23, 2008]] (via AutoSub)",
+        "[[136: March 30-31, 2008]] (via AutoSub)",
+        "[[147: Aaron Russo]] (via AutoSub)",
+        "[[163: January 27-29, 2009]] (via Wiki Page)",
+        "[[211: March 10, 2009]] (via AutoSub)",
+        "[[227: March 23, 2009]] (via AutoSub)",
+        "[[230C: Obama Deception, Part 3]] (via AutoSub)",
+        "[[248: January 2, 2019]] (via AutoSub, Wiki Page)",
+        "[[281: April 4, 2019]] (via AutoSub)",
+        "[[310: June 13-14, 2019]] (via otter.ai)",
+        "[[340: All About Steve]] (via AutoSub)",
+        "[[353: Mark Richards Pt. 11]] (via AutoSub)",
+        "[[354: October 8-9, 2019]] (via AutoSub)",
+        "[[364: April 21-22, 2013]] (via AutoSub)",
+        "[[373: April 24, 2013]] (via AutoSub)",
+        "[[377: December 6-10, 2019]] (via AutoSub)",
+        "[[383: December 31, 2019]] (via AutoSub)",
+        "[[384: January 3, 2020]] (via AutoSub)",
+        "[[386: January 8, 2020]] (via AutoSub)",
+        "[[439: May 29-31, 2020]] (via AutoSub)",
+        "[[488: The First Debate Spectacular]] (via AutoSub)",
+        "[[520: January 12-13, 2021]] (via AutoSub)",
+        "[[522: January 14-17, 2021]] (via AutoSub)",
+        "[[542: September 15, 2010]] (via AutoSub)",
+        "[[553: April 26-27, 2021]] (via AutoSub)",
+        "[[572: June 28-30, 2021]] (via AutoSub, Wiki Page)",
+        "[[587: August 14, 2021]] (via AutoSub)",
+        "[[588: August 15, 2021]] (via AutoSub, Wiki Page)",
+        "[[589: August 18-20, 2021]] (via AutoSub)",
+        "[[595: Boulder Missiles and Gettysburg Nukes]] (via AutoSub, Wiki Page)",
+        "[[602: Sandy Hook Response]] (via AutoSub, otter.ai)",
+        "[[605: June 17, 2003]] (via AutoSub, Wiki Page)",
+        "[[623: July 2-3, 2003]] (via AutoSub)",
+        "[[628: July 10, 2003]] (via AutoSub)",
+        "[[644: February 2, 2022]] (via AutoSub)",
+        "[[664: Formulaic Objections Part 5]] (via AutoSub, otter.ai)",
+        "[[703: 9/11, Part 1]] (via AutoSub)",
+        "[[730: August 12, 2003]] (via otter.ai)",
+        "[[731: September 29-30, 2022]] (via AutoSub, otter.ai)"
+      ],
+      "is_existing": false,
+      "is_known_missing": false,
+      "starting_char": "A"
+    }
+]

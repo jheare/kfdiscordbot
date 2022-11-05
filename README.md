@@ -1,22 +1,33 @@
 # kfdiscordbot
 Making a Knowledge Fight Discord bot
 
-## people
+## data
 
-Episode details re:people taken from this GDrive file by Anonymous Wonk Rexford Tugwell, then updated by CelestAI, on Reddit:
+*(From 5th November 2022)*
+__THE LASTEST EPISODE ON THIS REPO IS 739__
+This was originally taken off of a GDrive file made by Anonymous Wonk Rexford Tugwell and then edited by CelestAI - https://www.reddit.com/user/CelestAI - on Reddit.
 
-* Spreadsheet creator: Anonymous Wonk Rexford Tugwell
-* Spreadsheet contributor #2: https://www.reddit.com/user/CelestAI
-* GDrive file: https://docs.google.com/spreadsheets/d/1uxjQXMD-Ptyo_WA48s2ifouW5oQMjpH7PS2FSnpHvXI/edit#gid=375068045
+The OG spreadsheet got deleted.
 
-I've added datetime to the OG json file because if the doc is updated in future you can see when the data was last extracted. As I don't expect it to be updated in future I've just extracted it into a json for lookup purposes.
+The rest of the data is taken from CelestAI's github repo - https://github.com/RainbowBatch/kfdb
 
-## subjects
+## folders
 
-*(From 25th Oct 2022)*
-Episode details re:subjects are taken from the file 'raw_entities.json' from this github repo - https://github.com/RainbowBatch/kfdb - 
+### misc
+Misc just has me sketching out user stories and a potential schema
 
-The github repo is subject to change and the available data on subjects should be updated in future.
+### refine data
+This is the war crimes I committed to get the json into a format I was happy with. It's a lot of for loops but it did the job.
+
+__Sub-folder 'whatsmissing'__
+This is what episodes have no people data, no themes data, and no notable bits. These _do_ have deep dive data as that's just automatically extracted from episode transcripts. The rest of the data should be added but that might have to manually which...eep.
+
+## 'the plan' such as it is
+
+Now that I have all of the data formatted how I like I'm gonna try and make a search engine using Whoosh
+https://pypi.org/project/Whoosh/ 
+
+If the search engine works for the Discord bot I might as well actually make a search engine tbh.
 
 ## get bot
 
