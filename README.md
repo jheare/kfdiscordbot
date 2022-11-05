@@ -4,7 +4,9 @@ Making a Knowledge Fight Discord bot
 ## data
 
 *(From 5th November 2022)*
+
 __THE LASTEST EPISODE ON THIS REPO IS 739__
+
 This was originally taken off of a GDrive file made by Anonymous Wonk Rexford Tugwell and then edited by CelestAI - https://www.reddit.com/user/CelestAI - on Reddit.
 
 The OG spreadsheet got deleted.
@@ -19,7 +21,8 @@ Misc just has me sketching out user stories and a potential schema
 ### refine data
 This is the war crimes I committed to get the json into a format I was happy with. It's a lot of for loops but it did the job.
 
-__Sub-folder 'whatsmissing'__
+**__Sub-folder 'whatsmissing'__**
+
 This is what episodes have no people data, no themes data, and no notable bits. These _do_ have deep dive data as that's just automatically extracted from episode transcripts. The rest of the data should be added but that might have to manually which...eep.
 
 ## 'the plan' such as it is
