@@ -1,3 +1,4 @@
+import json
 import whoosh
 from typing import Dict, List, Sequence
 
@@ -6,8 +7,6 @@ from whoosh.fields import *
 from whoosh.qparser import MultifieldParser
 from whoosh.filedb.filestore import RamStorage
 from whoosh.analysis import StemmingAnalyzer
-
-import json
 
 #
 # Simple example indexing to an in-memory index and performing a search
@@ -34,6 +33,7 @@ class SearchEngine:
         writer = self.ix.writer()
         for doc in docs:
             d = {k: v for k,v in doc.items() if k in self.schema.stored_names()}
+            print(d)
             d['raw'] = json.dumps(doc) # raw version of all of doc
             writer.add_document(**d)
         writer.commit(optimize=True)
@@ -96,7 +96,7 @@ if __name__ == '__main__':
 
     fields_to_search = ["title", "description", "tags"]
 
-    for q in ["hatstand", "banana", "first", "second", "alice", "bob", "san francisco"]:
+    for q in ["third"]:
         print(f"Query:: {q}")
         print("\t", engine.query(q, fields_to_search, highlight=True))
         print("-"*70)
