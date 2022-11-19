@@ -7,6 +7,10 @@ from whoosh.fields import *
 from whoosh.qparser import MultifieldParser
 from whoosh.filedb.filestore import RamStorage
 from whoosh.analysis import StemmingAnalyzer
+from whoosh.qparser import QueryParser
+
+from whoosh import query
+from whoosh.query import Term
 
 #
 # Simple example indexing to an in-memory index and performing a search
@@ -21,6 +25,9 @@ from whoosh.analysis import StemmingAnalyzer
 # decoded containing any extra fields present in the original document. 
 #
 
+# with open('DiscordDataTest.json', encoding='utf-8') as raw_entities:
+with open('reformatted_discord_data.json', encoding='utf-8') as raw_entities:
+    tosearch = json.load(raw_entities)
 
 class SearchEngine:
 
@@ -32,12 +39,13 @@ class SearchEngine:
     def index_documents(self, docs: Sequence):
         writer = self.ix.writer()
         for doc in docs:
-            d = {k: v for k,v in doc.items() if k in self.schema.stored_names()}
+            d = {k: v for k,v in docs[doc].items() if k in self.schema.stored_names()}
             # print("I am printing the d")
             # print(d)
-            d['raw'] = json.dumps(doc) # raw version of all of doc
+            d['raw'] = json.dumps(docs[doc]) # raw version of all of doc
             # print(d['raw'])
             writer.add_document(**d)
+        # print(self.ix.schema)
         writer.commit(optimize=True)
 
     def get_index_size(self) -> int:
@@ -49,9 +57,6 @@ class SearchEngine:
             results = searcher.search(MultifieldParser(fields, schema=self.schema).parse(q))
             for r in results:
                 d = json.loads(r['raw'])
-                print(r)
-                print(type(r))
-                print(type(d))
                 if highlight:
                     for f in fields:
                         if r[f] and isinstance(r[f], str):
@@ -61,37 +66,34 @@ class SearchEngine:
 
         return search_results
 
+    def testfilter(self, search_field, query_term):
+        search_results = []
+        with self.ix.searcher() as searcher:
+            parser = QueryParser(search_field, schema=self.ix.schema)
+            query = parser.parse(query_term)
+            results = searcher.search(query, limit=None)
+            print(results, len(results))
+            for r in results:
+                d = json.loads(r['raw'])
+                search_results.append(d)
+
+        return search_results
+
 if __name__ == '__main__':
 
-    docs = [
-        {
-            "id": "1",
-            "title": "First document banana",
-            "description": "This is the first document we've added in San Francisco!",
-            "tags": ['foo', 'bar', 'cat'],
-            "extra": "kittens and cats"
-        },
-        {
-            "id": "2",
-            "title": "Second document hatstand",
-            "description": "The second one is even more interesting!",
-            "tags": ['alice'],
-            "extra": "foals and horses"
-        },
-        {
-            "id": "3",
-            "title": "Third document slug",
-            "description": "The third one is less interesting!",
-            "tags": "'obama', 'pool', 'apps cat'",
-            "extra": "bunny and rabbit"
-        },
-    ]
+    docs = tosearch
 
     schema = Schema(
-        id=ID(stored=True),
-        title=TEXT(stored=True),
-        description=TEXT(stored=True, analyzer=StemmingAnalyzer()),
-        tags=TEXT(stored=True, analyzer=StemmingAnalyzer())
+        episode_title=ID(stored=True),
+        topics_tostring=TEXT(stored=True, analyzer=StemmingAnalyzer()),
+        topics=KEYWORD(stored=True),
+        people_tostring=TEXT(stored=True, analyzer=StemmingAnalyzer()),
+        people=KEYWORD(stored=True),
+        alex_says_tostring=TEXT(stored=True, analyzer=StemmingAnalyzer()),
+        alex_says=KEYWORD(stored=True),
+        deep_dive_topics_tostring=TEXT(stored=True, analyzer=StemmingAnalyzer()),
+        deep_dive_topics=KEYWORD(stored=True),
+        deep_dive_aliases_tostring=TEXT(stored=True, analyzer=StemmingAnalyzer())
     )
 
     engine = SearchEngine(schema)
@@ -99,10 +101,11 @@ if __name__ == '__main__':
 
     print(f"indexed {engine.get_index_size()} documents")
 
-    fields_to_search = ["title", "description", "tags"]
+    fields_to_search = ["topics_tostring", "deep_dive_topics_tostring", "people_tostring", "alex_says_tostring"]
 
-    # for q in ["hatstand", "banana", "first", "second", "alice", "bob"]:
-    for q in ["apps cat"]:
-        print(f"Query:: {q}")
-        print("\t", engine.query(q, fields_to_search, highlight=True))
-        print("-"*70)
+    # for q in ["PJW", "Mark Dice", "weeny"]:
+    #     print(f"Query:: {q}")
+    #     print("\t", engine.query(q, fields_to_search, highlight=True))
+    #     print("-"*70)
+
+    print(engine.testfilter("topics_tostring", "Andy in Kansas"))
