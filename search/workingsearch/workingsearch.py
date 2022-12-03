@@ -41,6 +41,7 @@ class SearchEngine:
         schema.add('raw', TEXT(stored=True))
         self.ix = RamStorage().create_index(self.schema)
         self.testing_results = []
+        self.queries = []
 
     def index_documents(self, docs: Sequence):
         writer = self.ix.writer()
@@ -71,19 +72,23 @@ class SearchEngine:
 
                 search_results.append(d)
                 self.testing_results.append(d)
+            self.queries.append(q)
         # begin_refining_results.begin_refining(fields, search_results, q)
         return search_results
 
-    def testfilter(self, search_field, query_term):
+    def filtering(self, search_field, query_term):
+        self.testing_results = []
         search_results = []
+        self.queries = query_term
         with self.ix.searcher() as searcher:
             parser = QueryParser(search_field, schema=self.ix.schema)
             query = parser.parse(query_term)
             results = searcher.search(query, limit=None)
-            print(results, len(results))
+            # print(results, len(results))
             for r in results:
                 d = json.loads(r['raw'])
                 search_results.append(d)
+                self.testing_results.append(d)
         return search_results
 
 
@@ -115,11 +120,18 @@ if __name__ == '__main__':
                         "people_tostring", "alex_says_tostring"]
 
     for q in ["PJW", "Mark Dice", "weeny"]:
+    # for q in ["Muslims just kill each other"]:
         # print(f"Query:: {q}")
         # print("\t", engine.query(q, fields_to_search, highlight=True))
         engine.query(q, fields_to_search, highlight=True)
         print(len(engine.testing_results))
         print("-"*70)
-    begin_refining_results.begin_refining(fields_to_search, engine.testing_results, q)
+        # print(engine.queries)
+        # print(len(engine.queries))
+        # print("-"*70)
+    begin_refining_results.begin_refining(engine.testing_results, engine.queries)
 
-    # print(engine.testfilter("topics_tostring", "Andy in Kansas"))
+    engine.filtering("topics_tostring", "Muslims just kill each other")
+    # print(engine.testing_results)
+    # print("This should be a different set of results")
+    begin_refining_results.begin_refining(engine.testing_results, engine.queries)
