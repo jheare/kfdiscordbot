@@ -28,7 +28,7 @@ from whoosh.query import Term
 # decoded containing any extra fields present in the original document.
 #
 
-with open('reformatted_discord_data.json', encoding='utf-8') as raw_entities:
+with open('search_final.json', encoding='utf-8') as raw_entities:
     tosearch = json.load(raw_entities)
 
 pass_to_refining = RefiningResults()
@@ -106,9 +106,9 @@ if __name__ == '__main__':
         people=KEYWORD(stored=True),
         alex_says_tostring=TEXT(stored=True, analyzer=StemmingAnalyzer()),
         alex_says=KEYWORD(stored=True),
-        deep_dive_topics_tostring=TEXT(
+        deep_dive_topic_tostring=TEXT(
             stored=True, analyzer=StemmingAnalyzer()),
-        deep_dive_topics=KEYWORD(stored=True),
+        deep_dive_topic=KEYWORD(stored=True),
         deep_dive_aliases_tostring=TEXT(
             stored=True, analyzer=StemmingAnalyzer())
     )
@@ -118,7 +118,7 @@ if __name__ == '__main__':
 
     print(f"indexed {engine.get_index_size()} documents")
 
-    fields_to_search = ["topics_tostring", "deep_dive_topics_tostring",
+    fields_to_search = ["topics_tostring", "deep_dive_topic_tostring",
                         "people_tostring", "alex_says_tostring"]
 
     for q in ["PJW", "Mark Dice", "weeny"]:
@@ -133,7 +133,7 @@ if __name__ == '__main__':
         # print("-"*70)
     begin_refining_results.begin_refining(engine.testing_results, engine.queries)
 
-    engine.filtering("topics_tostring", "Muslims just kill each other", highlight=True)
+    # engine.filtering("topics_tostring", "Muslims just kill each other", highlight=True)
     # print(engine.testing_results)
     # print("This should be a different set of results")
-    begin_refining_results.begin_refining(engine.testing_results, engine.queries)
+    # begin_refining_results.begin_refining(engine.testing_results, engine.queries)

@@ -1,8 +1,5 @@
 import json
 
-# with open('reformatted_discord_data.json', encoding='utf-8') as raw_entities:
-#     tosearch = json.load(raw_entities)
-
 class IsolateResults:
 
     def __init__(self):
