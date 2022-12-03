@@ -48,8 +48,8 @@ class BeginRefiningSearch:
     def begin_refining(self, search_results, queries):
         self.final_object_with_arrays = {}
         self.object_to_pass = {}
-        print(len(queries))
-        print(len(search_results))
+        # print(len(queries))
+        # print(len(search_results))
         count = 0
         if type(queries) == list:
             for i in search_results:
@@ -60,11 +60,17 @@ class BeginRefiningSearch:
             self.add_fields_to_object_to_pass()
             isolatingresults.begin_isolation(self.object_to_pass, search_results, queries)
         else:
-            print("BOOP")
+            # print("BOOP")
             self.object_to_pass[count] = {}
-            for item in search_results:
-                print(type(search_results[0]))
-                print("This is the item")
-        print(self.object_to_pass)
-        print("FINAL OBJECT TO PASS")
+            # for item in search_results:
+            # print(type(search_results[0]))
+            print(search_results[0]['episode_title'])
+            print("This is our episode title")
+            self.object_to_pass[count]['episode_title'] = search_results[0]['episode_title']
+            self.loop_through_search_results(search_results[0], count)
+            # print("This is the item")
+            self.add_fields_to_object_to_pass()
+            isolatingresults.begin_isolation(self.object_to_pass, search_results, queries)
+        # print(self.object_to_pass)
+        # print("FINAL OBJECT TO PASS")
         

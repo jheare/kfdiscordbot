@@ -13,7 +13,13 @@ class IsolateResults:
 
     def assign_results_to_final_object(self, key, value, queries):
         self.final_object[self.episode_title_to_search][key] = []
-        for query in queries:
+        if type(queries) == list:
+            for query in queries:
+                for item in value:
+                    if query in item:
+                        self.final_object[self.episode_title_to_search][key].append(item)
+        else:
+            query = queries
             for item in value:
                 if query in item:
                     self.final_object[self.episode_title_to_search][key].append(item)
@@ -25,9 +31,9 @@ class IsolateResults:
                     self.assign_results_to_final_object(k, v, query)
                 else:
                     continue
-        # print("Attempting to access all results")
 
     def begin_isolation(self, filteredsearchresults, allsearchresults, query):
+        self.final_object = {}
         self.object_passed_to_class = allsearchresults
         for item in filteredsearchresults:
             for k,v in filteredsearchresults[item].items():
@@ -36,4 +42,5 @@ class IsolateResults:
                 if v == []:
                     self.loop_through_all_results(k, v, allsearchresults, query)
                 self.episode_title_to_search = ""
-        # print(self.final_object)
+        print(self.final_object)
+        print("This should be our final object")

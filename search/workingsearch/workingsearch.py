@@ -76,7 +76,7 @@ class SearchEngine:
         # begin_refining_results.begin_refining(fields, search_results, q)
         return search_results
 
-    def filtering(self, search_field, query_term):
+    def filtering(self, search_field, query_term, highlight: bool = True):
         self.testing_results = []
         search_results = []
         self.queries = query_term
@@ -84,9 +84,11 @@ class SearchEngine:
             parser = QueryParser(search_field, schema=self.ix.schema)
             query = parser.parse(query_term)
             results = searcher.search(query, limit=None)
-            # print(results, len(results))
             for r in results:
                 d = json.loads(r['raw'])
+                if highlight:
+                    if r[search_field] and isinstance(r[search_field], str):
+                        d[search_field] = r.highlights(search_field) or r[search_field]
                 search_results.append(d)
                 self.testing_results.append(d)
         return search_results
@@ -131,7 +133,7 @@ if __name__ == '__main__':
         # print("-"*70)
     begin_refining_results.begin_refining(engine.testing_results, engine.queries)
 
-    engine.filtering("topics_tostring", "Muslims just kill each other")
+    engine.filtering("topics_tostring", "Muslims just kill each other", highlight=True)
     # print(engine.testing_results)
     # print("This should be a different set of results")
     begin_refining_results.begin_refining(engine.testing_results, engine.queries)
