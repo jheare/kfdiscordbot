@@ -6,7 +6,7 @@ import os.path
 
 from beginresultrefining import BeginRefiningSearch
 
-from whoosh.index import create_in
+from whoosh.index import create_in, exists_in, open_dir
 from whoosh.fields import *
 from whoosh.qparser import MultifieldParser
 from whoosh.filedb.filestore import RamStorage
@@ -64,11 +64,19 @@ class SearchEngine:
         self.testing_results = []
         self.queries = []
 
+
     def create_index(self, docs):
         if not os.path.exists("index"):
             os.mkdir("index")
-        self.ix = create_in("index", schema)
-        self.index_documents(docs)
+        else:
+            if whoosh.index.exists_in("index"):
+                self.ix = whoosh.index.open_dir("index")
+                print("Boop")
+            else:
+                self.ix = create_in("index", schema)
+                self.index_documents(docs)
+        print(self.ix)
+        print("This is what ix looks like")
 
     def index_documents(self, docs: Sequence):
         writer = self.ix.writer()
