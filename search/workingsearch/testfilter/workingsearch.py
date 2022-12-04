@@ -116,22 +116,22 @@ if __name__ == '__main__':
 
     print(f"indexed {engine.get_index_size()} documents")
 
-    fields_to_search = ["topics_tostring", "deep_dive_topic_tostring",
-                        "people_tostring", "alex_says_tostring"]
+    fields_to_search = ["topics_tostring", "people_tostring", "alex_says_tostring"]
 
-    for q in ["PJW", "Mark Dice", "weeny"]:
+    # for q in ["PJW", "Mark Dice", "weeny"]:
+    # for q in ["underwear", "porn"]:
     # for q in ["Muslims just kill each other"]:
         # print(f"Query:: {q}")
         # print("\t", engine.query(q, fields_to_search, highlight=True))
-        engine.query(q, fields_to_search, highlight=True)
-        print(len(engine.testing_results))
-        print("-"*70)
+        # engine.query(q, fields_to_search, highlight=True)
+        # print(len(engine.testing_results))
+        # print("-"*70)
         # print(engine.queries)
         # print(len(engine.queries))
         # print("-"*70)
-    begin_refining_results.begin_refining(engine.testing_results, engine.queries)
+    # begin_refining_results.begin_refining(engine.testing_results, engine.queries)
 
-    # engine.filtering("topics_tostring", "Muslims just kill each other", highlight=True)
+    engine.filtering("topics_tostring", "Muslims", highlight=True)
     # print(engine.testing_results)
     # print("This should be a different set of results")
-    # begin_refining_results.begin_refining(engine.testing_results, engine.queries)
+    begin_refining_results.begin_refining(engine.testing_results, engine.queries)
