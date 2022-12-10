@@ -4,8 +4,7 @@ from typing import Dict, List, Sequence
 
 import os.path
 
-from beginresultrefining import BeginRefiningSearch
-from sortresults import SortResults
+from refinedeepdives import BeginRefiningSearch
 
 from whoosh.index import create_in, exists_in, open_dir
 from whoosh.fields import *
@@ -53,74 +52,25 @@ with open('search_final.json', encoding='utf-8') as raw_entities:
     tosearch = json.load(raw_entities)
 
 begin_refining_results = BeginRefiningSearch()
-sortresults = SortResults()
 
 class SearchEngine:
 
     def __init__(self, schema):
         self.schema = schema
         schema.add('raw', TEXT(stored=True))
-        # This is RamStorage and maybe I can use THAT on EC2...
-        # self.ix = RamStorage().create_index(self.schema)
-        # self.ix = whoosh.index.open_dir("index")
-        self.ix = self.create_index(self.schema)
+        # self.ix = whoosh.index.open_dir("/mnt/files/index")
+        self.ix = whoosh.index.open_dir("index")
         self.testing_results = []
         self.queries = []
 
-
-    def create_index(self, docs):
-        if not os.path.exists("index"):
-            os.mkdir("index")
-        else:
-            if whoosh.index.exists_in("index"):
-                self.ix = whoosh.index.open_dir("index")
-                print("Boop")
-            else:
-                self.ix = create_in("index", schema)
-                self.index_documents(docs)
-        print(self.ix)
-        print("This is what ix looks like")
-
-    def index_documents(self, docs: Sequence):
-        writer = self.ix.writer()
-        for doc in docs:
-            d = {k: v for k, v in docs[doc].items(
-            ) if k in self.schema.stored_names()}
-            d['raw'] = json.dumps(docs[doc])  # raw version of all of doc
-            writer.add_document(**d)
-        writer.commit(optimize=True)
-
-    def get_index_size(self) -> int:
-        return self.ix.doc_count_all()
-
-    def get_testing_size(self):
-        print(len(self.testing_results))
-
-    def query(self, q: str, fields: Sequence, highlight: bool = True) -> List[Dict]:
-        search_results = []
-        with self.ix.searcher() as searcher:
-            results = searcher.search(MultifieldParser(
-                fields, schema=self.schema).parse(q))
-            for r in results:
-                d = json.loads(r['raw'])
-                if highlight:
-                    for f in fields:
-                        if r[f] and isinstance(r[f], str):
-                            d[f] = r.highlights(f) or r[f]
-
-                search_results.append(d)
-                self.testing_results.append(d)
-            self.queries.append(q)
-        return search_results
-
     def filtering(self, search_field, query_term, highlight: bool = True):
-        self.testing_results = []
         search_results = []
-        self.queries = query_term
+        # self.queries = query_term
         with self.ix.searcher() as searcher:
             parser = QueryParser(search_field, schema=self.ix.schema)
             query = parser.parse(query_term)
             results = searcher.search(query, limit=None)
+            # print(results)
             for r in results:
                 d = json.loads(r['raw'])
                 if highlight:
@@ -133,7 +83,7 @@ class SearchEngine:
 
 if __name__ == '__main__':
 
-    docs = tosearch
+    # docs = tosearch
 
     schema = Schema(
         episode_title=ID(stored=True),
@@ -151,23 +101,23 @@ if __name__ == '__main__':
     )
 
     engine = SearchEngine(schema)
-    engine.create_index(docs)
-
-
-    print(f"indexed {engine.get_index_size()} documents")
 
     # Here is our mutli-field query with fields_to_search and a loop with our queries
     # These are just the tests fields to run locally
 
-    fields_to_search = ["topics_tostring", "people_tostring", "alex_says_tostring"]
+    # fields_to_search = ["topics_tostring", "people_tostring", "alex_says_tostring"]
 
-    for q in ["demons", "Reset"]:
-        engine.query(q, fields_to_search, highlight=True)
-    begin_refining_results.begin_refining(engine.testing_results, engine.queries)
-    sortresults.begin_sorting(begin_refining_results.object_to_return)
+    # for q in ["Mark Dice", "weeny", "Kraken"]:
+    # for q in ["Nonk"]:
+    #     engine.query(q, fields_to_search, highlight=True)
+    # begin_refining_results.begin_refining(engine.testing_results, engine.queries)
 
     # Here is our single-field query which I think runs a little faster but also there's no need to for-loop 
     # if you're just doing one. We have enough for loops as is!
 
-    # engine.filtering("alex_says_tostring", "weeny", highlight=True)
-    # begin_refining_results.begin_refining(engine.testing_results, engine.queries)
+field_to_search = "deep_dive_topic_tostring"
+
+query = "2nd Amendment"
+
+engine.filtering(field_to_search, query, highlight=True)
+begin_refining_results.begin_refining(engine.testing_results)
