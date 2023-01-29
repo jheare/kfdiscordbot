@@ -3,7 +3,7 @@ Making a Knowledge Fight Discord bot
 
 ## data
 
-*(From 5th November 2022)*
+*(From 29th Jan 2023)*
 
 __THE LASTEST EPISODE ON THIS REPO IS 739__
 
@@ -15,11 +15,21 @@ The rest of the data is taken from CelestAI's github repo - https://github.com/R
 
 ## folders
 
+### search
+This is where search lives. If you need to reindex then please use the file USEMETOINDEX. It will create an up-to-date search index for the actual engine. It's janky but it works! (Obv to be fixed later)
+
 ### misc
 Misc just has me sketching out user stories and a potential schema
 
 ### refine data
-This is the war crimes I committed to get the json into a format I was happy with. It's a lot of for loops but it did the job.
+_Updated to no longer be crimes against man and Gd (29/01/2023)_
+If you want to pull and refine the data to be the latest available on RainbowBatch's repo just go to ./refinedata/masterrefinefolder/GETANDFORMATALLDATA.py. It'll spit out DISCORD_FINAL - but this is also the final format required to make the search engine work (that's a whole 'nother thing here - https://github.com/oddpotato/kfdiscordsearch)
+
+The HOWTOGETDATA file in that folder will tell you what to do if you for some reason want to pull and format everything manually and step-by-step
+
+**__IMPORTANT NOTE__**
+
+If for some reason the data isn't coming out how you want it, please check the OG repo because I have no control over that and occasionally the data formatting gets changed which means this repo will also need updating
 
 **__Sub-folder 'whatsmissing'__**
 
@@ -27,10 +37,11 @@ This is what episodes have no people data, no themes data, and no notable bits. 
 
 ## 'the plan' such as it is
 
-Now that I have all of the data formatted how I like I'm gonna try and make a search engine using Whoosh
-https://pypi.org/project/Whoosh/ 
+The data is formatted - we have a working Whoosh engine that's being hooked up to a website in the kfdiscordsearch repo and now I want to get this up and running as a Discord bot in EC2. Unsure as to how EC2 will feel about this but as of 29-01-2023 that's the plan.
 
-If the search engine works for the Discord bot I might as well actually make a search engine tbh.
+(Small note on search engine - it's held together by a very complex Rube Goldberg machine involving Elastic File System hosting the indexed data for lambda because I don't want to learn ElasticSearch on my Saturdays yet...I'll get there)
+
+## the janky bit
 
 ## get bot
 

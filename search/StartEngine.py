@@ -36,7 +36,6 @@ class StartEngine:
     def __init__(self):
         self.boop = "Boop"
 
-
     def run_filtered_query(self, field, query):
         topic_to_search = ('').join(field)
         for q in query:

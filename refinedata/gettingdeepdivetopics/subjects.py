@@ -18,14 +18,18 @@ class RefiningJSON():
             json.dump(self.object_to_write, finaljson, ensure_ascii=False)
                 
     def make_objects(self, subject):
-        for key, value in subject['entity_origin'].items():
-            relevant_key = 'autosub'
-            if relevant_key in key:
-                # numbers = re.findall(r'\d+', key)
-                # numbers_to_str = ''.join(numbers)
-                episode_number = key[:3]
+        for episodes in subject['grouped_entity_origin']:
+            isolate_episode_string = re.match('\[\[(.*?): ', episodes)
+            if isolate_episode_string == None:
+                print("None")
+            else:
+                extract_episode_number = re.findall(r'\d+', isolate_episode_string.group(0))
+                episode_number = ('').join(extract_episode_number)
                 print(episode_number)
-                # if numbers_to_str in self.object_to_write:
+            # else:
+            #     print(episodes)
+                ################
+                # episode_number = key[:3]
                 if episode_number in self.object_to_write:
                     if subject["entity_name"] not in self.object_to_write[episode_number]['deep_dive_topics']:
                         self.object_to_write[episode_number]['deep_dive_topics'].append(subject["entity_name"])
@@ -33,6 +37,7 @@ class RefiningJSON():
                 else:
                     self.object_to_write[episode_number] = {
                         "deep_dive_topics": [subject["entity_name"]], "aliases": [subject["entity_sourcetexts"]]}
+                ###############
 #        self.cleanup_values()
 
     def begin_refining(self):
