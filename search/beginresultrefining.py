@@ -54,7 +54,7 @@ class BeginRefiningSearch:
         search_result = []
         for item in value:
             for q in self.queries:
-                if q in item:
+                if q.lower() in item.lower():
                     search_result.append(item)
         formatted_results = self.remove_duplicates(search_result)
         return formatted_results

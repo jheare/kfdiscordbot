@@ -13,7 +13,7 @@ class AlexSays:
         self.alex_says_array = []
         self.topics_array = []
         # self.final_json = "alexsaystest.json"
-        self.final_json = "alexsays.json"
+        self.final_json = "alexsaysupdated.json"
 
     def finish_up(self):
         with open(self.final_json, "w", encoding='utf-8') as final_json:
@@ -48,7 +48,7 @@ class AlexSays:
 
     # Let's goooooooooooooooooooo
     def begin_refining(self):
-        with open('final.json', encoding='utf-8') as raw_entities:
+        with open('finalupdated.json', encoding='utf-8') as raw_entities:
         # with open('finaltest.json', encoding='utf-8') as raw_entities:
             raw_entities_to_loop = json.load(raw_entities)
             for episodes in raw_entities_to_loop:

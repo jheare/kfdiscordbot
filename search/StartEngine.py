@@ -58,4 +58,4 @@ class StartEngine:
             self.run_multi_query(fields, query)
 
 searching = StartEngine()
-searching.start_engine(["topics_tostring"], ["Steve", "Reset", "Nonk"])
+searching.start_engine(["topics_tostring", "alex_says_tostring", "people_tostring"], ["shit", "fuck"])

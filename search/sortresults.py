@@ -1,6 +1,10 @@
 import json
 import re
 
+from formatspecialepisodes import FormatSpecialEpisodes
+
+formatspecial = FormatSpecialEpisodes()
+
 # with open('searchresults.json', encoding='utf-8') as raw_entities:
 #     tosearch = json.load(raw_entities)
 
@@ -52,28 +56,18 @@ class SortResults:
 # DON'T WANT TO BE MESSING WITH THIS ON A SATURDAY BUT IF YOU'RE SEEING THIS - I AM AWARE
 # THAT THIS IS DUMB AND I SHOULD DO BETTER
 
-    def change_obama_deception(self, episode_title):
-        if "A" in episode_title:
-            return "230.1"
-        if "B" in episode_title:
-            return "230.2"
-        if "C" in episode_title:
-            return "230.3"
-        if "D" in episode_title:
-            return "230.4"
-        if "E" in episode_title:
-            return "230.5"
-
-    def is_obama_deception(self, episode_title):
-        if "Obama Deception" in episode_title:
+    def is_multipart_ep(self, episode_title):
+        if "Obama Deception" in episode_title or "Endgame" in episode_title:
             return True
 
 ###############################################################
 
     def get_ep_number_and_title(self, episode_title):
         extract_episode_number = re.findall('.+?(?=: )', episode_title)
-        if self.is_obama_deception(episode_title):
-            extract_episode_number = self.change_obama_deception(episode_title)
+        if len(extract_episode_number) == 0:
+            extract_episode_number = formatspecial.check_special_names(episode_title)
+        if self.is_multipart_ep(episode_title):
+            extract_episode_number = formatspecial.change_multipart_ep_description(episode_title)
         episode_number = self.turn_to_int(extract_episode_number)
         if self.if_exists_unsorted(episode_number) == False:
             self.unsorted_episodes[episode_number] = {}

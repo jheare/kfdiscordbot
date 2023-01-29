@@ -8,7 +8,7 @@ class SortOutAliases():
     def __init__(self):
         self.object_to_write = {}
         # self.final_json = "refiningaliasestest.json"
-        self.final_json = "refinedaliases.json"
+        self.final_json = "refinedaliasesupdated.json"
 
     def finish_up(self):
         with open(self.final_json, "w", encoding='utf-8') as final_json:
@@ -32,7 +32,7 @@ class SortOutAliases():
 
     def begin_refining(self):
         # with open('subjectstoformattest.json', encoding='utf-8') as raw_entities:
-        with open('formattedsubjects.json', encoding='utf-8') as raw_entities:
+        with open('formattedsubjectsupdated.json', encoding='utf-8') as raw_entities:
             raw_entities_to_loop = json.load(raw_entities)
             for item in raw_entities_to_loop:
                 print(item)
