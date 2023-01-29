@@ -81,7 +81,8 @@ class SortResults:
             for k, v in results[item].items():
                 self.unsorted_episodes[episode_number][k] = v
         self.sort_keys_by_value()
-        self.finish_up()
+        #self.finish_up()
+        print(self.sorted_episodes)
         return self.sorted_episodes
         
 
