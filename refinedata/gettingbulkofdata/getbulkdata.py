@@ -5,6 +5,7 @@
 # * TOPICS
 
 import json
+import datetime
 
 class AlexSays:
 
@@ -13,10 +14,12 @@ class AlexSays:
         self.alex_says_array = []
         self.topics_array = []
         # self.final_json = "alexsaystest.json"
-        self.final_json = "alexsaysupdated.json"
+        self.final_json = "bulkdata"
 
     def finish_up(self):
-        with open(self.final_json, "w", encoding='utf-8') as final_json:
+        final_json_date = str(datetime.date.today())
+        final_json_file_name = self.final_json + final_json_date + ".json"
+        with open(final_json_file_name, "w", encoding='utf-8') as final_json:
             json.dump(self.object_to_write, final_json, ensure_ascii=False)
 
     # If this doesn't count as something alex said, it goes in topics instead
@@ -34,7 +37,7 @@ class AlexSays:
 
     # We're creating the object we're going to write into a json file
     def creating_object_to_write(self, episodenumber, episodetitle, peopleinepisode):
-        self.object_to_write[episodenumber] = {"Episode Title": episodetitle, "Alex says": self.alex_says_array, "Topics": self.topics_array, "People": peopleinepisode}
+        self.object_to_write[episodenumber] = {"episode_title": episodetitle, "alex_says": self.alex_says_array, "topics": self.topics_array, "people": peopleinepisode}
 
     # We're isolating every time 'Alex says' something
     def get_the_says(self, episode):

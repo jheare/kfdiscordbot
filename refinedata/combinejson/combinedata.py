@@ -1,5 +1,5 @@
 import json
-
+import datetime
 
 class CombineJSON:
 
@@ -7,30 +7,38 @@ class CombineJSON:
         self.object_to_write = {}
         self.main_data_dict = {}
         self.deep_dive_data_dict = {}
-        # self.final_json = "combineddatatest.json"
-        self.final_json = "combineddataupdated.json"
+        self.final_json = "combineddata"
+        self.date = ""
 
     def finish_up(self):
-        with open(self.final_json, "w", encoding='utf-8') as final_json:
+        final_json_name = self.final_json + self.date + ".json"
+        with open(final_json_name, "w", encoding='utf-8') as final_json:
             json.dump(self.main_data_dict, final_json, ensure_ascii=False)
 
     def combine_data(self):
+        count = 0
         for large_episode_data in self.main_data_dict:
-            print(large_episode_data)
+            # print(large_episode_data)
             for deep_dive_data in self.deep_dive_data_dict:
-                print(deep_dive_data)
+                # print(deep_dive_data)
                 if deep_dive_data == large_episode_data:
-                    self.main_data_dict[large_episode_data]['Deep Dive Topic'] = self.deep_dive_data_dict[deep_dive_data]['Deep Dive Topic']
-                    self.main_data_dict[large_episode_data]['Aliases'] = self.deep_dive_data_dict[deep_dive_data]['Aliases']
+                    self.main_data_dict[large_episode_data]['deep_dive_topics'] = self.deep_dive_data_dict[deep_dive_data]['deep_dive_topics']
+                    self.main_data_dict[large_episode_data]['aliases'] = self.deep_dive_data_dict[deep_dive_data]['aliases']
+            count += 1
+            print(count)
+            print("COUNT")
         self.finish_up()
 
 
     def begin_refining(self):
+        self.date = str(datetime.date.today())
+        bulkdata = "bulkdata" + self.date + ".json"
+        deepdivesubjectdata = "refinedaliases" + self.date + ".json"
         # with open('alexsaystest.json', encoding='utf-8') as raw_entities:
-        with open('alexsaysupdated.json', encoding='utf-8') as raw_entities:
+        with open(bulkdata, encoding='utf-8') as raw_entities:
             self.main_data_dict = json.load(raw_entities)
         # with open('refinedaliasestest.json', encoding="utf-8") as raw_aliases:
-        with open('refinedaliasesupdated.json', encoding="utf-8") as raw_aliases:
+        with open(deepdivesubjectdata, encoding="utf-8") as raw_aliases:
             self.deep_dive_data_dict = json.load(raw_aliases)
         self.combine_data()
 
