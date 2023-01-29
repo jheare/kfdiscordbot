@@ -59,7 +59,6 @@ class GetBulkData:
                 self.get_the_says(episodes)
         self.finish_up()
 
-
-# getalexsays = AlexSays()
-# getalexsays.begin_refining()
+# getbulkdata = GetBulkData()
+# getbulkdata.begin_refining()
 

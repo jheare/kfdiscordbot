@@ -1,12 +1,14 @@
+
+
 import json
 import datetime
 import requests
 
-from getbulkdata import GetBulkData
-from getdeepdivedata import GetDeepDiveData
-from formattingaliases import FormattingAliases
-from combinedata import CombineData
-from formatdataforsearch import FormatForSearch
+from functions.getbulkdata import GetBulkData
+from functions.getdeepdivedata import GetDeepDiveData
+from functions.formattingaliases import FormattingAliases
+from functions.combinedata import CombineData
+from functions.formatdataforsearch import FormatForSearch
 
 class MasterFileGrabFormatData:
 
