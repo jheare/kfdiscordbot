@@ -1,14 +1,11 @@
 import os
-import random
 import string
 import re
 from re import search
 
-
-class SanitizeInput:
+class FindNicknames():
 
     def __init__(self):
-        self.input = ""
         self.nicknames = {
             "dubbs": ["paul joseph watson", "pjw", "pjdubbs", "pj dubbs"],
             "stevie": ["steve pieczenik", "stevie p"],
@@ -17,7 +14,6 @@ class SanitizeInput:
         }
         
     # this function checks for common nicknames and replaces them with the correct name
-    
 
     def isnickname(self, string):
         nicknames_to_pass_along = []
@@ -31,18 +27,17 @@ class SanitizeInput:
         return nicknames_to_pass_along
 
 
-    def output(self, input):
+    def checknames(self, input):
         #Removing punctuation from the input
         minuspunctuation = input.translate(str.maketrans('','',string.punctuation))
         #Making every letter lowercase
         lowercase = minuspunctuation.lower()
         #Moving on to checking to see if a common nickname is in the formatted input
-        self.isnickname(lowercase)
-        print("This is self.input after running isnickname " + self.input)
-        return self.input
+        name_array = self.isnickname(lowercase)
+        return name_array
 
 
-addnames = SanitizeInput()
-addnames.output('PJDUBBS')
-addnames.output('David')
-addnames.output('Squatch')
+# addnames = FindNicknames()
+# addnames.output('PJDUBBS')
+# addnames.output('David')
+# addnames.output('Squatch')

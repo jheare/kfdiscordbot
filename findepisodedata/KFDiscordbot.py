@@ -6,6 +6,10 @@ import random
 from dotenv import load_dotenv
 import json
 from sanitizeinput import SanitizeInput
+from typing import List
+import asyncio
+
+import requests
 
 load_dotenv()
 
@@ -29,40 +33,99 @@ async def on_ready():
     except Exception as e:
         print(e)
 
-@bot.tree.command(name="findepisode")
-@app_commands.describe(person = "Who do you want to learn about?")
-async def say(interaction: discord.Interaction, person: str):
-    formattedinput = sanitizeinput.output(person)
-    arr_of_eps = []
-    with open(r'KFEpisodeDataPeople.json', encoding='utf-8') as jsonfile:
-        data = json.load(jsonfile)
-        for x in data:
-            if formattedinput in data[x]:
-                arr_of_eps.append(x)
-    if len(arr_of_eps) == 0:
-        string_to_return = "isn't found in any episodes!"
-    else:
-        string_to_return = "is found in episodes " + ', '.join(str(x) for x in arr_of_eps)
-    await interaction.response.send_message(f"`{person} {string_to_return}`")
-    # await interaction.response.send_message(f"`{person}` is in episode 3")
+async def load():
+    for filename in os.listdir('./cogs'):
+        if filename.endswith('.py'):
+            await bot.load_extension(f'cogs.{filename[:-3]}')
+
+@bot.command(name='99')
+async def nine_nine(ctx):
+    brooklyn_99_quotes = [
+        'I\'m the human form of the 💯 emoji.',
+        'Bingpot!',
+        (
+            'Cool. Cool cool cool cool cool cool cool, '
+            'no doubt no doubt no doubt no doubt.'
+        ),
+    ]
+
+    response = random.choice(brooklyn_99_quotes)
+    await ctx.send(response)
+
+async def main():
+    await load()
+    await bot.start(os.getenv('DISCORD_TOKEN'))
+
+asyncio.run(main())
 
 
 
 
 
 
-# @bot.command(name='99')
-# async def nine_nine(ctx):
-#     brooklyn_99_quotes = [
-#         'I\'m the human form of the 💯 emoji.',
-#         'Bingpot!',
-#         (
-#             'Cool. Cool cool cool cool cool cool cool, '
-#             'no doubt no doubt no doubt no doubt.'
-#         ),
-#     ]
 
-#     response = random.choice(brooklyn_99_quotes)
-#     await ctx.send(response)
 
-bot.run(os.getenv('DISCORD_TOKEN'))
+
+# @bot.tree.command(name="findepisode")
+# @app_commands.describe(person = "Who do you want to learn about?")
+# async def say(interaction: discord.Interaction, person: str):
+#     jsontosend = {
+#     "fields": ["people_tostring"],
+#     "queries": [person]
+#     }
+#     personsearch = requests.post("https://62fm88kr45.execute-api.us-east-1.amazonaws.com/prod/standardquery", data = json.dumps(jsontosend))
+#     formatresp = json.loads(personsearch.text)
+#     formatbody = json.loads(formatresp['body'])
+#     episode_array = []
+#     for i in formatbody:
+#         episode_array.append(i)
+#     if len(episode_array) > 0:
+#         messagestring = "\n * ".join(episode_array)
+#         message = f"`{person}` is in episodes: \n* {messagestring}"
+#     else:
+#         message = "Nothing found!"
+#     await interaction.response.send_message(message)
+
+
+# @app_commands.describe(topic = "What topic are you interested in?")
+# async def say(interaction: discord.Interaction, topic: str):
+#     jsontosend = {
+#     "fields": ["topics_tostring"],
+#     "queries": [topic]
+#     }
+#     personsearch = requests.post("https://62fm88kr45.execute-api.us-east-1.amazonaws.com/prod/standardquery", data = json.dumps(jsontosend))
+#     formatresp = json.loads(personsearch.text)
+#     formatbody = json.loads(formatresp['body'])
+#     episode_array = []
+#     for i in formatbody:
+#         episode_array.append(i)
+#     if len(episode_array) > 0:
+#         messagestring = "\n * ".join(episode_array)
+#         message = f"`{topic}` is discussed in episodes: \n* {messagestring}"
+#     else:
+#         message = "Nothing found!"
+#     await interaction.response.send_message(message)
+
+# @app_commands.describe(alexsays = "Alex says...?")
+# async def say(interaction: discord.Interaction, alexsays: str):
+#     jsontosend = {
+#     "fields": ["alex_says_tostring"],
+#     "queries": [alexsays]
+#     }
+#     personsearch = requests.post("https://62fm88kr45.execute-api.us-east-1.amazonaws.com/prod/standardquery", data = json.dumps(jsontosend))
+#     formatresp = json.loads(personsearch.text)
+#     formatbody = json.loads(formatresp['body'])
+#     episode_array = []
+#     for i in formatbody:
+#         episode_array.append(i)
+#     if len(episode_array) > 0:
+#         messagestring = "\n * ".join(episode_array)
+#         message = f"Alex says `{alexsays}` in these episodes: \n* {messagestring}"
+#     else:
+#         message = "Nothing found!"
+#     await interaction.response.send_message(message)
+
+
+
+
+# bot.run(os.getenv('DISCORD_TOKEN'))

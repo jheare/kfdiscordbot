@@ -3,7 +3,6 @@ from discord import app_commands
 from discord.ext import commands
 import os
 import random
-import dotenv
 from dotenv import load_dotenv
 import json
 from typing import List
@@ -14,8 +13,6 @@ import requests
 load_dotenv()
 
 # TOKEN = os.getenv('DISCORD_TOKEN')
-
-sanitizeinput = SanitizeInput()
 
 intents = discord.Intents.default()
 intents.message_content = True
@@ -38,19 +35,13 @@ async def load():
         if filename.endswith('.py'):
             await bot.load_extension(f'cogs.{filename[:-3]}')
 
-@bot.command(name='99')
-async def nine_nine(ctx):
-    brooklyn_99_quotes = [
-        'I\'m the human form of the 💯 emoji.',
-        'Bingpot!',
-        (
-            'Cool. Cool cool cool cool cool cool cool, '
-            'no doubt no doubt no doubt no doubt.'
-        ),
+@bot.command()
+async def testinput(ctx):
+    embeds = [
+        Embed(title="test page 1", description="This is just some test content!", color=0x115599),
+        Embed(title="test page 2", description="Nothing interesting here.", color=0x5599ff),
+        Embed(title="test page 3", description="Why are you still here?", color=0x191638)
     ]
-
-    response = random.choice(brooklyn_99_quotes)
-    await ctx.send(response)
 
 async def main():
     await load()
