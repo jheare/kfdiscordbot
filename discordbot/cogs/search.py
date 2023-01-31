@@ -35,6 +35,12 @@ class Search(commands.Cog):
     #@commands.Command()
     @app_commands.command(name="episodebyperson", description="Find episodes featuring...")
     async def episodebyperson(self, interaction: discord.Interaction, person: str):
+        await interaction.response.defer(ephemeral=False, thinking=True)
+        if person == "Alex Jones":
+            embed=discord.Embed(title="Please don't", description = "My poor little brain can't handle that.", url=self.searchurl)
+            embed.set_image(url="https://media-cldnry.s-nbcnews.com/image/upload/mpx/2704722219/2022_10/1665605735247_n_hallie_brk_jones_billion_verdict_221012_1920x1080-c63t1h.jpg")
+            await interaction.followup.send(embed=embed)
+            return True
         get_name_array = self.get_nicknames.checknames(person)
         jsontosend = {
         "fields": ["people_tostring", "topics_tostring"],
@@ -55,16 +61,17 @@ class Search(commands.Cog):
             messagestring = "\n * ".join(episode_array)
             message = f"`{person}` is in episodes:"
         else:
-            message = "Nothing found!"
             embed=discord.Embed(title="Nothing found!", url=self.searchurl)
             embed.set_image(url="https://media.tenor.com/5U4tWWKQGDkAAAAM/alex-jones-crying.gif")
-            await interaction.response.send_message(embed=embed)
+            await interaction.followup.send(embed=embed)
         embed=discord.Embed(title=message, description= "* " + messagestring, url=self.searchurl)
-        embed.set_footer(text=self.footertext, icon_url=self.footericon)
-        await interaction.response.send_message(embed=embed)
+        if message != "":
+            embed.set_footer(text=self.footertext, icon_url=self.footericon)
+            await interaction.followup.send(embed=embed)
 
     @app_commands.command(name="alexsays", description="When did Alex say...")
     async def alexsays(self, interaction: discord.Interaction, alexsays: str):
+        await interaction.response.defer(ephemeral=False, thinking=True)
         jsontosend = {
         "fields": ["alex_says_tostring"],
         "queries": [alexsays]
@@ -85,13 +92,20 @@ class Search(commands.Cog):
         else:
             embed=discord.Embed(title="Nothing found!", url=self.searchurl)
             embed.set_image(url="https://media.npr.org/assets/img/2022/08/05/ap22216570430921-2dceca1166ed5d3a06b0c717f3a7da7c80c6c9c9-s1100-c50.jpg")
-            await interaction.response.send_message(embed=embed)
+            await interaction.followup.send(embed=embed)
         embed=discord.Embed(title=message, description= "* " + messagestring, url=self.searchurl)
-        embed.set_footer(text=self.footertext, icon_url=self.footericon)
-        await interaction.response.send_message(embed=embed)
+        if message != "":
+            embed.set_footer(text=self.footertext, icon_url=self.footericon)
+            await interaction.followup.send(embed=embed)
 
     @app_commands.command(name="topics", description="When do they talk about...")
     async def topics(self, interaction: discord.Interaction, topic: str):
+        await interaction.response.defer(ephemeral=False, thinking=True)
+        if topic == "Alex Jones":
+            embed=discord.Embed(title="Please don't", description = "My poor little brain can't handle that.", url=self.searchurl)
+            embed.set_image(url="https://media-cldnry.s-nbcnews.com/image/upload/mpx/2704722219/2022_10/1665605735247_n_hallie_brk_jones_billion_verdict_221012_1920x1080-c63t1h.jpg")
+            await interaction.followup.send(embed=embed)
+            return True
         jsontosend = {
         "fields": ["topics_tostring"],
         "queries": [topic]
@@ -113,10 +127,12 @@ class Search(commands.Cog):
         else:
             embed=discord.Embed(title="Nothing found!", url=self.searchurl)
             embed.set_image(url="https://static.independent.co.uk/2022/09/22/21/SEI126493450.jpg")
-            await interaction.response.send_message(embed=embed)
+            await interaction.followup.send(embed=embed)
         embed=discord.Embed(title=message, description="* " + messagestring, url=self.searchurl)
-        embed.set_footer(text=self.footertext, icon_url=self.footericon)
-        await interaction.response.send_message(embed=embed)
+        if message != "":
+            embed.set_footer(text=self.footertext, icon_url=self.footericon)
+            await interaction.followup.send(embed=embed)
+        #await interaction.response.send_message(embed=embed)
 
 async def setup(bot):
     await bot.add_cog(Search(bot))
